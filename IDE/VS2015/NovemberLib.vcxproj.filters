@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы\utils">
+      <UniqueIdentifier>{18314ed5-dcb9-4c26-b0a8-ae5a5e527648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\pages">
+      <UniqueIdentifier>{95c626bc-2aab-4f9d-a8f7-2745b037e6ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\managers">
+      <UniqueIdentifier>{de7edf39-db22-4a27-a6da-4c4240f5f537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\interfaces">
+      <UniqueIdentifier>{e7e90b17-37aa-45da-bcff-98226a9b55dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\helpers">
+      <UniqueIdentifier>{0b20d915-4b4a-43ae-8db3-6cfdd9b3538e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\FCGI">
+      <UniqueIdentifier>{993be06b-21d7-4de5-af19-e5168d392d1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\FCGI">
+      <UniqueIdentifier>{480701d8-1842-4d4d-8e80-d881afc85edb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\helpers">
+      <UniqueIdentifier>{3d610cc5-02ed-42b8-9672-de9a841b8573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\interfaces">
+      <UniqueIdentifier>{9d48f7cc-f6d7-42e7-ae0f-ec33c555a2a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\managers">
+      <UniqueIdentifier>{3c37dbc1-d7d0-4434-9a6d-bdc00502ac81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\pages">
+      <UniqueIdentifier>{86a88b8c-8efb-42e4-be4b-8005a5b96d22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\utils">
+      <UniqueIdentifier>{f1b4b436-374e-4c38-8149-f9d698167479}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\FCGI\CFCGIApp.cpp">
+      <Filter>Файлы исходного кода\FCGI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\FCGI\CFCGIRequest.cpp">
+      <Filter>Файлы исходного кода\FCGI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\FCGI\CFCGIRequestHandler.cpp">
+      <Filter>Файлы исходного кода\FCGI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\helpers\CConfigHelper.cpp">
+      <Filter>Файлы исходного кода\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\helpers\CMessageParser.cpp">
+      <Filter>Файлы исходного кода\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\helpers\CPathsHelper.cpp">
+      <Filter>Файлы исходного кода\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\helpers\CSyncHelper.cpp">
+      <Filter>Файлы исходного кода\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\helpers\CTemplateHelper.cpp">
+      <Filter>Файлы исходного кода\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\interfaces\IErrorMessage.cpp">
+      <Filter>Файлы исходного кода\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\interfaces\IValidTester.cpp">
+      <Filter>Файлы исходного кода\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\managers\CCommandsManager.cpp">
+      <Filter>Файлы исходного кода\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\managers\CDBManager.cpp">
+      <Filter>Файлы исходного кода\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\managers\CDefaultCommandManager.cpp">
+      <Filter>Файлы исходного кода\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\managers\CManagers.cpp">
+      <Filter>Файлы исходного кода\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\managers\CMySQLDBManager.cpp">
+      <Filter>Файлы исходного кода\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\managers\CPageManager.cpp">
+      <Filter>Файлы исходного кода\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\managers\CResourceManager.cpp">
+      <Filter>Файлы исходного кода\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\managers\CSessionManager.cpp">
+      <Filter>Файлы исходного кода\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\pages\CErrorPage.cpp">
+      <Filter>Файлы исходного кода\pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\pages\CPage.cpp">
+      <Filter>Файлы исходного кода\pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\utils\CCodeTimer.cpp">
+      <Filter>Файлы исходного кода\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\utils\CLog.cpp">
+      <Filter>Файлы исходного кода\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\utils\md5.cpp">
+      <Filter>Файлы исходного кода\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\utils\MIMEType.cpp">
+      <Filter>Файлы исходного кода\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\utils\URI.cpp">
+      <Filter>Файлы исходного кода\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\utils\utils.cpp">
+      <Filter>Файлы исходного кода\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\CBan.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\CDefaultUser.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\CHTMLTemplate.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\helpers\CTextHelper.cpp">
+      <Filter>Файлы исходного кода\helpers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\novemberlib\CBan.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\CDefaultUser.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\CHTMLTemplate.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\FCGI\CFCGIApp.h">
+      <Filter>Заголовочные файлы\FCGI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\FCGI\CFCGIRequest.h">
+      <Filter>Заголовочные файлы\FCGI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\FCGI\CFCGIRequestHandler.h">
+      <Filter>Заголовочные файлы\FCGI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\helpers\CConfigHelper.h">
+      <Filter>Заголовочные файлы\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\helpers\CMessageParser.h">
+      <Filter>Заголовочные файлы\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\helpers\CPathsHelper.h">
+      <Filter>Заголовочные файлы\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\helpers\CSyncHelper.h">
+      <Filter>Заголовочные файлы\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\helpers\CTemplateHelper.h">
+      <Filter>Заголовочные файлы\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\helpers\CTextHelper.h">
+      <Filter>Заголовочные файлы\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\interfaces\IErrorMessage.h">
+      <Filter>Заголовочные файлы\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\interfaces\IJSONSerializer.h">
+      <Filter>Заголовочные файлы\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\interfaces\IStringSerializer.h">
+      <Filter>Заголовочные файлы\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\interfaces\ITemplateSingleton.h">
+      <Filter>Заголовочные файлы\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\interfaces\IUncopyable.h">
+      <Filter>Заголовочные файлы\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\interfaces\IValidTester.h">
+      <Filter>Заголовочные файлы\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\managers\CCommandsManager.h">
+      <Filter>Заголовочные файлы\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\managers\CDBManager.h">
+      <Filter>Заголовочные файлы\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\managers\CDefaultCommandManager.h">
+      <Filter>Заголовочные файлы\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\managers\CManagers.h">
+      <Filter>Заголовочные файлы\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\managers\CMySQLDBManager.h">
+      <Filter>Заголовочные файлы\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\managers\CPageManager.h">
+      <Filter>Заголовочные файлы\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\managers\CResourceManager.h">
+      <Filter>Заголовочные файлы\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\managers\CSessionManager.h">
+      <Filter>Заголовочные файлы\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\pages\CErrorPage.h">
+      <Filter>Заголовочные файлы\pages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\pages\CPage.h">
+      <Filter>Заголовочные файлы\pages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\utils\CCodeTimer.h">
+      <Filter>Заголовочные файлы\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\utils\CLog.h">
+      <Filter>Заголовочные файлы\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\utils\config.h">
+      <Filter>Заголовочные файлы\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\utils\md5.h">
+      <Filter>Заголовочные файлы\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\utils\MIMEType.h">
+      <Filter>Заголовочные файлы\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\utils\URI.h">
+      <Filter>Заголовочные файлы\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\utils\utils.h">
+      <Filter>Заголовочные файлы\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\novemberlib\novemberlib.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

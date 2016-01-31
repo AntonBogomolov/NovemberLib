@@ -1,0 +1,10 @@
+<h1>{TITLE}</h1>
+<br>
+<hr>
+<div>
+<span>Your name:</span><input type="text" name="user_text" /><input type="button" name="send" value="introduce" onclick="getInfo()" />
+</div>
+<div>
+<p>output text:</p>
+<textarea id="output" cols="40" rows="15"></textarea>
+</div>

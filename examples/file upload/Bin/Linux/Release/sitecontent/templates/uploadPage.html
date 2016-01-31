@@ -1,0 +1,14 @@
+<div class='container'>
+	<h2>Hello, {USERLOGIN}</h2>
+	{ATTACHS}
+</div>
+<hr>
+<div class='container'>
+	<form class='form' action='?command=sendfile' method='post' enctype='multipart/form-data'>	
+      <h2 class="form-heading">Upload file</h2>
+		<input type='hidden' name='user_id' value='{USERID}' />			
+			<input id='fileUpload' type='file' name='postfile'>		
+			<br>
+			<input type='submit' name='sendFile' value='Send'/>			
+	</form>	
+</div>
