@@ -1,0 +1,17 @@
+<div class='attachment'>
+	<div class='file_info  control_text'>
+		<span>File: <a href='{FILEPATH}' >{FILENAME}</a></span>
+		<span class="activeText" onclick="delFile({FILEID})"> Delete this file</span>
+		</br>
+		<span>Size: {FILESIZE} Kb</span>
+		{isIMAGE}{<span>, {IMAGEWIDTH}x{IMAGEHEIGHT} </span>}{}	
+		</div>
+	{isIMAGE}{
+	<img class='attachment_preview' src='{IMAGEPREVIEWPATH}' alt='{IMAGEPREVIEWDESCRIPTION}' width='{IMAGEPREVIEWWIDTH}' height='{IMAGEPREVIEWHEIGHT}'>}{}	
+	
+	{isVIDEO}{
+	<video width='360' height='240' preload='none' controls> <source src='{SOURCE}' type='{VIDTYPE}'> </video>	}{}	
+	
+	{isAUDIO}{
+	<audio preload='none' controls> <source src='{SOURCE}' type='{AUDTYPE}'> </audio>	}{}
+</div>
