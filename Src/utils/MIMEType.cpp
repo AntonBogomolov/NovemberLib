@@ -7,7 +7,6 @@
 
 #include "../../Include/novemberlib/utils/MIMEType.h"
 
-<<<<<<< HEAD
 std::string MIMEType::get(const std::string& filext) const
 {
     std::string ext = filext;
@@ -32,12 +31,6 @@ void MIMEType::set(const std::string& ext, const std::string& type)
 
 void MIMEType::init()
 {
-=======
-MIMEType::MIMEType()
-{
-    default_type = "application/octet-stream";
-
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
     set("3dm", "x-world/x-3dmf");
     set("3dmf", "x-world/x-3dmf");
     set("a", "application/octet-stream");
@@ -491,7 +484,6 @@ MIMEType::MIMEType()
     set("zsh", "text/x-script.zsh");
 }
 
-<<<<<<< HEAD
 MIMEType::MIMEType() :
     default_type("application/octet-stream")
 {
@@ -501,33 +493,6 @@ MIMEType::MIMEType() :
 MIMEType::~MIMEType()
 {
 
-=======
-MIMEType::~MIMEType()
-{
-
-}
-
-std::string MIMEType::get(const std::string& filext) const
-{
-    std::string ext = filext;
-    size_t dotPos = filext.find_last_of(".");
-    if(dotPos != std::string::npos)
-    {
-        ext = filext.substr(dotPos + 1, std::string::npos);
-    }
-
-    std::map<std::string, std::string>::const_iterator it = exts.find(ext);
-    if(it != exts.end()) return it->second;
-    else return default_type;
-}
-
-void MIMEType::set(const std::string& ext, const std::string& type)
-{
-    std::map<std::string, std::string>::iterator it = exts.find(ext);
-    if(it != exts.end()) exts.erase(it);
-
-    exts.insert(std::pair<std::string, std::string>(ext, type));
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 }
 
 const std::string MIMEType::getFileType(const std::string& fileMimeType)

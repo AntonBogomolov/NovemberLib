@@ -11,10 +11,7 @@ public:
 protected:
 	virtual void init();
 	void requestHandler();
-<<<<<<< HEAD
 	void watchHandler();
-=======
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 	int listenSocket;
 };
 

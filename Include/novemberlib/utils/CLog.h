@@ -23,11 +23,7 @@ class CLog : public ITemplateSingleton<CLog>
 		template<class T>
 		void addInfo(const T infoMessage)
 		{
-<<<<<<< HEAD
 			if (printLevel != LOG_PRINT_ALL) return;
-=======
-			if (printLevel < LOG_PRINT_ALL) return;
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 
 			CSyncHelper::getInstance()->getLogMutex()->lock();
 			converter << infoMessage;
@@ -35,11 +31,7 @@ class CLog : public ITemplateSingleton<CLog>
 			converter.str("");
 
 			//if (printLevel >= LOG_PRINT_ALL)
-<<<<<<< HEAD
 			//{
-=======
-			//{			
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 			std::string date = getDataAndTime();
 			std::cout << date << message << std::endl;
 			logData += date;
@@ -53,11 +45,7 @@ class CLog : public ITemplateSingleton<CLog>
 		template<class T>
 		void addWarning(const T warningMessage)
 		{
-<<<<<<< HEAD
 			if (printLevel == LOG_PRINT_ERRORS) return;
-=======
-			if (printLevel < LOG_PRINT_WARNINGS)
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 
 			CSyncHelper::getInstance()->getLogMutex()->lock();
 			converter << warningMessage;
@@ -78,11 +66,7 @@ class CLog : public ITemplateSingleton<CLog>
 		template<class T>
 		void addError(const T errorMessage)
 		{
-<<<<<<< HEAD
 			//if (printLevel != LOG_PRINT_ERRORS) return;
-=======
-			if (printLevel < LOG_PRINT_ERRORS) return;
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 
 			CSyncHelper::getInstance()->getLogMutex()->lock();
 			converter << errorMessage;
@@ -103,13 +87,8 @@ class CLog : public ITemplateSingleton<CLog>
 
 		virtual ~CLog();
 	protected:
-<<<<<<< HEAD
 	private:
 		long logBufferLen;
-=======
-	private:		
-		long logBufferLen;		
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 		int printLevel;
 		std::string logData;
 		std::ostringstream converter;

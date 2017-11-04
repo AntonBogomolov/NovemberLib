@@ -13,7 +13,6 @@
 
 #include <cstdlib>
 
-<<<<<<< HEAD
 
 CDefaultUser::CDefaultUser() :
     cookie(""), key(""), pass(""), login(""), salt(""), remouteAddress("127.0.01"),
@@ -27,40 +26,6 @@ CDefaultUser::CDefaultUser(const int userId) :
     userAgent(" "), userId(userId), userType(0), lastChange(0), lastAction(0)
 {
     setIsValid(false);
-=======
-CDefaultUser::CDefaultUser()
-{
-	this->cookie = "";
-	this->login = "";
-	this->pass = "";
-	this->salt = "";
-	this->userId = 0;
-	this->userType = 0;
-	this->lastChange = 0;
-	this->lastAction = 0;
-
-	this->userAgent = " ";
-	this->remouteAddress = "127.0.0.1";
-
-	this->isValid = false;
-}
-
-CDefaultUser::CDefaultUser(const int userId)
-{
-	this->cookie = "";
-	this->login = "";
-	this->pass = "";
-	this->salt = "";
-	this->userId = userId;
-	this->userType = 0;
-	this->lastChange = 0;
-	this->lastAction = 0;
-
-	this->userAgent = " ";
-	this->remouteAddress = "127.0.0.1";
-
-	this->isValid = false;
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 }
 
 CDefaultUser::~CDefaultUser()
@@ -189,11 +154,7 @@ CDefaultUser* CDefaultUser::createNewUser(const std::string& login, const std::s
 	time(&currUnixTime);
 
 	CSessionManager* sessionManager = CManagers::getInstance()->getSessionManager();
-<<<<<<< HEAD
 	CDefaultUser* newUser = sessionManager->userCreationFunc();
-=======
-	CDefaultUser* newUser = sessionManager->userCreationFunc();	
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 	CLog::getInstance()->addInfo("New User");
 
 	std::string key = cookieData;
@@ -250,11 +211,7 @@ void CDefaultUser::fillUserDataById(const int userId)
 	}
 }
 
-<<<<<<< HEAD
 bool CDefaultUser::isUserExist(const std::string& userKey)
-=======
-bool CDefaultUser::isUserExist(const std::string userKey)
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 {
 	CDBManager* dbManager = CManagers::getInstance()->getDBManager();
 	std::shared_ptr<CDBRequest> dbRequest(dbManager->createDBRequest());
@@ -274,7 +231,6 @@ void CDefaultUser::fillUserData(const std::string& cookieData)
 	bool isHasDB = gs->getStringParamValue("isHasDB", "false") == "true";
 	if(!isHasDB || cookieData == gs->getStringParamValue("guestCookieValue", "GUEST"))
 	{
-<<<<<<< HEAD
 		this->userId = 1;
 		this->userType = UT_USER;
 		this->key = cookieData;
@@ -285,17 +241,6 @@ void CDefaultUser::fillUserData(const std::string& cookieData)
 		this->salt = "";
 		this->login = "";
 		this->cookie = gs->getStringParamValue("guestCookieValue", "GUEST");
-=======
-		userId = 1;
-		userType = UT_USER;
-		key = cookieData;
-		lastChange = 0;
-		lastAction = 0;
-		userAgent = "";
-		pass = "";
-		salt = "";
-		login = "";
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 
 		setIsValid(true);
 		return;
@@ -348,11 +293,7 @@ void CDefaultUser::fillUserData(const std::string& cookieData)
 				int banUserId = 0;
 				long banCreationTime = 0;
 				long banROTime = 0;
-<<<<<<< HEAD
 				bool banIsAccessClosed;
-=======
-				bool banIsAccessClosed = false;
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 
 				banId = result->getIntValue(i, 0);
 				banUserId = result->getIntValue(i, 1);

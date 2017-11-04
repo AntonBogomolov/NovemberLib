@@ -15,15 +15,12 @@
 #include "utils/MIMEType.h"
 #include "utils/URI.h"
 #include "utils/utils.h"
-<<<<<<< HEAD
 #include "utils/json.h"
 
 #include "HTTPClient/IResultsStore.h"
 #include "HTTPClient/CTasksManager.h"
 #include "HTTPClient/CProxy.h"
 #include "HTTPClient/CHTTPClient.h"
-=======
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 
 #include "FCGI/CFCGIApp.h"
 #include "FCGI/CFCGIRequest.h"

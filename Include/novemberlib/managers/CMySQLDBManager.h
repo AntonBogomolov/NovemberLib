@@ -25,11 +25,8 @@ class CMySQLDBRequestResult : public CDBRequestResult
 		virtual const std::string getStringValue(const int rowIndex, const int fieldIndex, const std::string& defValue = "") const;
 		virtual int  getIntValue(const int rowIndex, const int fieldIndex,  const int defValue = 0) const;
 		virtual long getLongValue(const int rowIndex, const int fieldIndex, const long defValue = 0) const;
-<<<<<<< HEAD
 		virtual float  getFloatValue(const int rowIndex, const int fieldIndex, const float defValue = 0.0f)  const;
 		virtual double getDoubleValue(const int rowIndex, const int fieldIndex, const double defValue = 0.0) const;
-=======
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 		virtual bool getBoolValue(const int rowIndex, const int fieldIndex, const bool defValue = false) const;
 
 		CMySQLDBRequestResult(MYSQL_RES* result);

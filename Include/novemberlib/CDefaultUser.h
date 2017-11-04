@@ -46,11 +46,7 @@ class CDefaultUser : public IValidTester
 		virtual void fillUserData(const std::string& cookieData);
 		void fillUserDataById(const int userId);
 		static CDefaultUser* loginUser(const std::string& login, const std::string& pass);
-<<<<<<< HEAD
 		static bool isUserExist(const std::string& userKey);
-=======
-		static bool isUserExist(const std::string userKey);
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 
 		CDefaultUser();
 		CDefaultUser(const int userId);

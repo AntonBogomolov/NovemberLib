@@ -98,10 +98,7 @@ CCommandResult::CCommandResult()
     type = CR_TEXT;
     isValid = true;
     isSuccess = false;
-<<<<<<< HEAD
     binData = nullptr;
-=======
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 }
 
 CCommandResult::CCommandResult(const CCommandResult& result)
@@ -110,10 +107,7 @@ CCommandResult::CCommandResult(const CCommandResult& result)
     setIsValid(result.getIsValid());
     setIsSuccess(result.getIsSuccess());
     setType(result.getType());
-<<<<<<< HEAD
     if(result.getType() == CR_BIN) setBinData(result.getBinData());
-=======
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 }
 
 CCommandResult::CCommandResult(const std::string& data, const bool isValid, const int type)
@@ -124,7 +118,6 @@ CCommandResult::CCommandResult(const std::string& data, const bool isValid, cons
     this->type = type;
     if(this->type == CR_TEXT)    this->header = "text/html; charset=utf-8";
     if(this->type == CR_JSON)    this->header = "application/json; charset=utf-8";
-<<<<<<< HEAD
     if(this->type == CR_CSV)     this->header = "application/csv; charset=utf-8";
     if(this->type == CR_BIN)     this->setIsValid(false);
     binData = nullptr;
@@ -136,8 +129,6 @@ CCommandResult::CCommandResult(std::vector<uint8_t>* binData, const bool isValid
     this->isValid = isValid;
     this->isSuccess = false;
     this->setType(CR_BIN);
-=======
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 }
 
 CCommandResult::~CCommandResult()
@@ -145,16 +136,11 @@ CCommandResult::~CCommandResult()
 
 }
 
-<<<<<<< HEAD
 const std::string CCommandResult::getTextData() const
-=======
-const std::string CCommandResult::getData() const
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 {
     return data;
 }
 
-<<<<<<< HEAD
 std::vector<uint8_t>* CCommandResult::getBinData() const
 {
     return binData;
@@ -168,8 +154,6 @@ const char* CCommandResult::getData() const
     return nullptr;
 }
 
-=======
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 const std::string CCommandResult::getHeader() const
 {
     return header;
@@ -190,7 +174,6 @@ int CCommandResult::getType() const
     return type;
 }
 
-<<<<<<< HEAD
 long CCommandResult::getDataSize() const
 {
     if(type != CR_BIN) return data.length();
@@ -205,8 +188,6 @@ void CCommandResult::setBinData(std::vector<uint8_t>* binData)
     this->binData = binData;
 }
 
-=======
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 void CCommandResult::setData(const std::string& data)
 {
     this->data = data;
@@ -217,15 +198,12 @@ void CCommandResult::appendData(const std::string& data)
     this->data += data;
 }
 
-<<<<<<< HEAD
 void CCommandResult::appendHeader(const std::string& headerData)
 {
     this->header += "\r\n";
     this->header += headerData;
 }
 
-=======
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 void CCommandResult::setIsValid(const bool isValid)
 {
     this->isValid = isValid;
@@ -241,7 +219,6 @@ void CCommandResult::setType(const int type)
     this->type = type;
     if(this->type == CR_TEXT)    this->header = "text/html; charset=utf-8";
     if(this->type == CR_JSON)    this->header = "application/json; charset=utf-8";
-<<<<<<< HEAD
     if(this->type == CR_CSV)     this->header = "application/csv; charset=utf-8";
     if(this->type == CR_BIN)
     {
@@ -249,6 +226,4 @@ void CCommandResult::setType(const int type)
         appendHeader("Content-Transfer-Encoding: binary");
         appendHeader("Content-Length: " + valueToString(getDataSize()));
     }
-=======
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 }

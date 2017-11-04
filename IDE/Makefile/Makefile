@@ -12,180 +12,28 @@ LD = g++
 WINDRES = windres
 
 INC = 
-<<<<<<< HEAD
 CFLAGS = 
-=======
-CFLAGS = -Wall
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 RESINC = 
 LIBDIR = 
 LIB = 
 LDFLAGS = 
 
-<<<<<<< HEAD
 INC_RELEASE = $(INC)
 CFLAGS_RELEASE = $(CFLAGS) -O2 -pedantic -std=c++11 -Wextra -Wall -shared -fPIC
-=======
-INC_DEBUG = $(INC)
-CFLAGS_DEBUG = $(CFLAGS) -g -march=corei7 -O3 -pedantic -std=c++0x -Wextra -Wall -shared
-RESINC_DEBUG = $(RESINC)
-RCFLAGS_DEBUG = $(RCFLAGS)
-LIBDIR_DEBUG = $(LIBDIR)
-LIB_DEBUG = $(LIB)
-LDFLAGS_DEBUG = $(LDFLAGS) -lfcgi -lfcgi++ -lmysqlclient
-OBJDIR_DEBUG = ../../Bin/Linux/Debug/obj
-DEP_DEBUG = 
-OUT_DEBUG = ../../Bin/Linux/Debug/$(LIBNAME)
-
-INC_RELEASE = $(INC)
-CFLAGS_RELEASE = $(CFLAGS) -march=corei7 -O3 -pedantic -std=c++0x -Wextra -Wall -shared
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 RESINC_RELEASE = $(RESINC)
 RCFLAGS_RELEASE = $(RCFLAGS)
 LIBDIR_RELEASE = $(LIBDIR)
 LIB_RELEASE = $(LIB)
-<<<<<<< HEAD
 LDFLAGS_RELEASE = $(LDFLAGS) -s -lfcgi -lfcgi++ -lmysqlclient -lcurl -lz
-=======
-LDFLAGS_RELEASE = $(LDFLAGS) -s -lfcgi -lfcgi++ -lmysqlclient
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 OBJDIR_RELEASE = ../../Bin/Linux/Release/obj
 DEP_RELEASE = 
 OUT_RELEASE = ../../Bin/Linux/Release/$(LIBNAME)
 
-<<<<<<< HEAD
 OBJ_RELEASE = $(OBJDIR_RELEASE)/__/__/Src/FCGI/CFCGIRequestHandler.o $(OBJDIR_RELEASE)/__/__/Src/managers/CCommandsManager.o $(OBJDIR_RELEASE)/__/__/Src/interfaces/IValidTester.o $(OBJDIR_RELEASE)/__/__/Src/interfaces/IErrorMessage.o $(OBJDIR_RELEASE)/__/__/Src/helpers/CTemplateHelper.o $(OBJDIR_RELEASE)/__/__/Src/helpers/CSyncHelper.o $(OBJDIR_RELEASE)/__/__/Src/helpers/CPathsHelper.o $(OBJDIR_RELEASE)/__/__/Src/helpers/CMessageParser.o $(OBJDIR_RELEASE)/__/__/Src/helpers/CConfigHelper.o $(OBJDIR_RELEASE)/__/__/Src/managers/CDBManager.o $(OBJDIR_RELEASE)/__/__/Src/FCGI/CFCGIRequest.o $(OBJDIR_RELEASE)/__/__/Src/FCGI/CFCGIApp.o $(OBJDIR_RELEASE)/__/__/Src/CHTMLTemplate.o $(OBJDIR_RELEASE)/__/__/Src/CDefaultUser.o $(OBJDIR_RELEASE)/__/__/Src/CBan.o $(OBJDIR_RELEASE)/__/__/Src/pages/CErrorPage.o $(OBJDIR_RELEASE)/__/__/Src/utils/utils.o $(OBJDIR_RELEASE)/__/__/Src/utils/md5.o $(OBJDIR_RELEASE)/__/__/Src/utils/URI.o $(OBJDIR_RELEASE)/__/__/Src/utils/MIMEType.o $(OBJDIR_RELEASE)/__/__/Src/utils/CLog.o $(OBJDIR_RELEASE)/__/__/Src/utils/CCodeTimer.o $(OBJDIR_RELEASE)/__/__/Src/pages/CPage.o $(OBJDIR_RELEASE)/__/__/Src/managers/CSessionManager.o $(OBJDIR_RELEASE)/__/__/Src/managers/CResourceManager.o $(OBJDIR_RELEASE)/__/__/Src/managers/CPageManager.o $(OBJDIR_RELEASE)/__/__/Src/managers/CMySQLDBManager.o $(OBJDIR_RELEASE)/__/__/Src/managers/CManagers.o $(OBJDIR_RELEASE)/__/__/Src/managers/CDefaultCommandManager.o $(OBJDIR_RELEASE)/__/__/Src/helpers/CTextHelper.o $(OBJDIR_RELEASE)/__/__/Src/HTTPClient/CHTTPClient.o $(OBJDIR_RELEASE)/__/__/Src/HTTPClient/CProxy.o
 
 all: release
 
 clean: clean_release
-=======
-OBJ_DEBUG = $(OBJDIR_DEBUG)/__/__/Src/FCGI/CFCGIRequestHandler.o $(OBJDIR_DEBUG)/__/__/Src/managers/CCommandsManager.o $(OBJDIR_DEBUG)/__/__/Src/interfaces/IValidTester.o $(OBJDIR_DEBUG)/__/__/Src/interfaces/IErrorMessage.o $(OBJDIR_DEBUG)/__/__/Src/helpers/CTemplateHelper.o $(OBJDIR_DEBUG)/__/__/Src/helpers/CSyncHelper.o $(OBJDIR_DEBUG)/__/__/Src/helpers/CPathsHelper.o $(OBJDIR_DEBUG)/__/__/Src/helpers/CMessageParser.o $(OBJDIR_DEBUG)/__/__/Src/helpers/CConfigHelper.o $(OBJDIR_DEBUG)/__/__/Src/managers/CDBManager.o $(OBJDIR_DEBUG)/__/__/Src/FCGI/CFCGIRequest.o $(OBJDIR_DEBUG)/__/__/Src/FCGI/CFCGIApp.o $(OBJDIR_DEBUG)/__/__/Src/CHTMLTemplate.o $(OBJDIR_DEBUG)/__/__/Src/CDefaultUser.o $(OBJDIR_DEBUG)/__/__/Src/CBan.o $(OBJDIR_DEBUG)/__/__/Src/pages/CErrorPage.o $(OBJDIR_DEBUG)/__/__/Src/utils/utils.o $(OBJDIR_DEBUG)/__/__/Src/utils/md5.o $(OBJDIR_DEBUG)/__/__/Src/utils/URI.o $(OBJDIR_DEBUG)/__/__/Src/utils/MIMEType.o $(OBJDIR_DEBUG)/__/__/Src/utils/CLog.o $(OBJDIR_DEBUG)/__/__/Src/utils/CCodeTimer.o $(OBJDIR_DEBUG)/__/__/Src/pages/CPage.o $(OBJDIR_DEBUG)/__/__/Src/managers/CSessionManager.o $(OBJDIR_DEBUG)/__/__/Src/managers/CResourceManager.o $(OBJDIR_DEBUG)/__/__/Src/managers/CPageManager.o $(OBJDIR_DEBUG)/__/__/Src/managers/CMySQLDBManager.o $(OBJDIR_DEBUG)/__/__/Src/managers/CManagers.o $(OBJDIR_DEBUG)/__/__/Src/managers/CDefaultCommandManager.o $(OBJDIR_DEBUG)/__/__/Src/helpers/CTextHelper.o
-
-OBJ_RELEASE = $(OBJDIR_RELEASE)/__/__/Src/FCGI/CFCGIRequestHandler.o $(OBJDIR_RELEASE)/__/__/Src/managers/CCommandsManager.o $(OBJDIR_RELEASE)/__/__/Src/interfaces/IValidTester.o $(OBJDIR_RELEASE)/__/__/Src/interfaces/IErrorMessage.o $(OBJDIR_RELEASE)/__/__/Src/helpers/CTemplateHelper.o $(OBJDIR_RELEASE)/__/__/Src/helpers/CSyncHelper.o $(OBJDIR_RELEASE)/__/__/Src/helpers/CPathsHelper.o $(OBJDIR_RELEASE)/__/__/Src/helpers/CMessageParser.o $(OBJDIR_RELEASE)/__/__/Src/helpers/CConfigHelper.o $(OBJDIR_RELEASE)/__/__/Src/managers/CDBManager.o $(OBJDIR_RELEASE)/__/__/Src/FCGI/CFCGIRequest.o $(OBJDIR_RELEASE)/__/__/Src/FCGI/CFCGIApp.o $(OBJDIR_RELEASE)/__/__/Src/CHTMLTemplate.o $(OBJDIR_RELEASE)/__/__/Src/CDefaultUser.o $(OBJDIR_RELEASE)/__/__/Src/CBan.o $(OBJDIR_RELEASE)/__/__/Src/pages/CErrorPage.o $(OBJDIR_RELEASE)/__/__/Src/utils/utils.o $(OBJDIR_RELEASE)/__/__/Src/utils/md5.o $(OBJDIR_RELEASE)/__/__/Src/utils/URI.o $(OBJDIR_RELEASE)/__/__/Src/utils/MIMEType.o $(OBJDIR_RELEASE)/__/__/Src/utils/CLog.o $(OBJDIR_RELEASE)/__/__/Src/utils/CCodeTimer.o $(OBJDIR_RELEASE)/__/__/Src/pages/CPage.o $(OBJDIR_RELEASE)/__/__/Src/managers/CSessionManager.o $(OBJDIR_RELEASE)/__/__/Src/managers/CResourceManager.o $(OBJDIR_RELEASE)/__/__/Src/managers/CPageManager.o $(OBJDIR_RELEASE)/__/__/Src/managers/CMySQLDBManager.o $(OBJDIR_RELEASE)/__/__/Src/managers/CManagers.o $(OBJDIR_RELEASE)/__/__/Src/managers/CDefaultCommandManager.o $(OBJDIR_RELEASE)/__/__/Src/helpers/CTextHelper.o
-
-all: debug release
-
-clean: clean_debug clean_release
-
-before_debug: 
-	test -d ../../Bin/Linux/Debug || mkdir -p ../../Bin/Linux/Debug
-	test -d $(OBJDIR_DEBUG)/__/__/Src/FCGI || mkdir -p $(OBJDIR_DEBUG)/__/__/Src/FCGI
-	test -d $(OBJDIR_DEBUG)/__/__/Src/managers || mkdir -p $(OBJDIR_DEBUG)/__/__/Src/managers
-	test -d $(OBJDIR_DEBUG)/__/__/Src/interfaces || mkdir -p $(OBJDIR_DEBUG)/__/__/Src/interfaces
-	test -d $(OBJDIR_DEBUG)/__/__/Src/helpers || mkdir -p $(OBJDIR_DEBUG)/__/__/Src/helpers
-	test -d $(OBJDIR_DEBUG)/__/__/Src || mkdir -p $(OBJDIR_DEBUG)/__/__/Src
-	test -d $(OBJDIR_DEBUG)/__/__/Src/pages || mkdir -p $(OBJDIR_DEBUG)/__/__/Src/pages
-	test -d $(OBJDIR_DEBUG)/__/__/Src/utils || mkdir -p $(OBJDIR_DEBUG)/__/__/Src/utils
-
-after_debug: 
-
-debug: before_debug out_debug after_debug
-
-out_debug: before_debug $(OBJ_DEBUG) $(DEP_DEBUG)
-	$(LD) -shared $(LIBDIR_DEBUG) $(OBJ_DEBUG)  -o $(OUT_DEBUG) $(LDFLAGS_DEBUG) $(LIB_DEBUG)
-
-$(OBJDIR_DEBUG)/__/__/Src/FCGI/CFCGIRequestHandler.o: ../../Src/FCGI/CFCGIRequestHandler.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/FCGI/CFCGIRequestHandler.cpp -o $(OBJDIR_DEBUG)/__/__/Src/FCGI/CFCGIRequestHandler.o
-
-$(OBJDIR_DEBUG)/__/__/Src/managers/CCommandsManager.o: ../../Src/managers/CCommandsManager.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/managers/CCommandsManager.cpp -o $(OBJDIR_DEBUG)/__/__/Src/managers/CCommandsManager.o
-
-$(OBJDIR_DEBUG)/__/__/Src/interfaces/IValidTester.o: ../../Src/interfaces/IValidTester.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/interfaces/IValidTester.cpp -o $(OBJDIR_DEBUG)/__/__/Src/interfaces/IValidTester.o
-
-$(OBJDIR_DEBUG)/__/__/Src/interfaces/IErrorMessage.o: ../../Src/interfaces/IErrorMessage.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/interfaces/IErrorMessage.cpp -o $(OBJDIR_DEBUG)/__/__/Src/interfaces/IErrorMessage.o
-
-$(OBJDIR_DEBUG)/__/__/Src/helpers/CTemplateHelper.o: ../../Src/helpers/CTemplateHelper.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/helpers/CTemplateHelper.cpp -o $(OBJDIR_DEBUG)/__/__/Src/helpers/CTemplateHelper.o
-
-$(OBJDIR_DEBUG)/__/__/Src/helpers/CSyncHelper.o: ../../Src/helpers/CSyncHelper.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/helpers/CSyncHelper.cpp -o $(OBJDIR_DEBUG)/__/__/Src/helpers/CSyncHelper.o
-
-$(OBJDIR_DEBUG)/__/__/Src/helpers/CPathsHelper.o: ../../Src/helpers/CPathsHelper.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/helpers/CPathsHelper.cpp -o $(OBJDIR_DEBUG)/__/__/Src/helpers/CPathsHelper.o
-
-$(OBJDIR_DEBUG)/__/__/Src/helpers/CMessageParser.o: ../../Src/helpers/CMessageParser.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/helpers/CMessageParser.cpp -o $(OBJDIR_DEBUG)/__/__/Src/helpers/CMessageParser.o
-
-$(OBJDIR_DEBUG)/__/__/Src/helpers/CConfigHelper.o: ../../Src/helpers/CConfigHelper.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/helpers/CConfigHelper.cpp -o $(OBJDIR_DEBUG)/__/__/Src/helpers/CConfigHelper.o
-
-$(OBJDIR_DEBUG)/__/__/Src/managers/CDBManager.o: ../../Src/managers/CDBManager.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/managers/CDBManager.cpp -o $(OBJDIR_DEBUG)/__/__/Src/managers/CDBManager.o
-
-$(OBJDIR_DEBUG)/__/__/Src/FCGI/CFCGIRequest.o: ../../Src/FCGI/CFCGIRequest.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/FCGI/CFCGIRequest.cpp -o $(OBJDIR_DEBUG)/__/__/Src/FCGI/CFCGIRequest.o
-
-$(OBJDIR_DEBUG)/__/__/Src/FCGI/CFCGIApp.o: ../../Src/FCGI/CFCGIApp.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/FCGI/CFCGIApp.cpp -o $(OBJDIR_DEBUG)/__/__/Src/FCGI/CFCGIApp.o
-
-$(OBJDIR_DEBUG)/__/__/Src/CHTMLTemplate.o: ../../Src/CHTMLTemplate.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/CHTMLTemplate.cpp -o $(OBJDIR_DEBUG)/__/__/Src/CHTMLTemplate.o
-
-$(OBJDIR_DEBUG)/__/__/Src/CDefaultUser.o: ../../Src/CDefaultUser.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/CDefaultUser.cpp -o $(OBJDIR_DEBUG)/__/__/Src/CDefaultUser.o
-
-$(OBJDIR_DEBUG)/__/__/Src/CBan.o: ../../Src/CBan.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/CBan.cpp -o $(OBJDIR_DEBUG)/__/__/Src/CBan.o
-
-$(OBJDIR_DEBUG)/__/__/Src/pages/CErrorPage.o: ../../Src/pages/CErrorPage.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/pages/CErrorPage.cpp -o $(OBJDIR_DEBUG)/__/__/Src/pages/CErrorPage.o
-
-$(OBJDIR_DEBUG)/__/__/Src/utils/utils.o: ../../Src/utils/utils.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/utils/utils.cpp -o $(OBJDIR_DEBUG)/__/__/Src/utils/utils.o
-
-$(OBJDIR_DEBUG)/__/__/Src/utils/md5.o: ../../Src/utils/md5.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/utils/md5.cpp -o $(OBJDIR_DEBUG)/__/__/Src/utils/md5.o
-
-$(OBJDIR_DEBUG)/__/__/Src/utils/URI.o: ../../Src/utils/URI.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/utils/URI.cpp -o $(OBJDIR_DEBUG)/__/__/Src/utils/URI.o
-
-$(OBJDIR_DEBUG)/__/__/Src/utils/MIMEType.o: ../../Src/utils/MIMEType.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/utils/MIMEType.cpp -o $(OBJDIR_DEBUG)/__/__/Src/utils/MIMEType.o
-
-$(OBJDIR_DEBUG)/__/__/Src/utils/CLog.o: ../../Src/utils/CLog.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/utils/CLog.cpp -o $(OBJDIR_DEBUG)/__/__/Src/utils/CLog.o
-
-$(OBJDIR_DEBUG)/__/__/Src/utils/CCodeTimer.o: ../../Src/utils/CCodeTimer.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/utils/CCodeTimer.cpp -o $(OBJDIR_DEBUG)/__/__/Src/utils/CCodeTimer.o
-
-$(OBJDIR_DEBUG)/__/__/Src/pages/CPage.o: ../../Src/pages/CPage.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/pages/CPage.cpp -o $(OBJDIR_DEBUG)/__/__/Src/pages/CPage.o
-
-$(OBJDIR_DEBUG)/__/__/Src/managers/CSessionManager.o: ../../Src/managers/CSessionManager.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/managers/CSessionManager.cpp -o $(OBJDIR_DEBUG)/__/__/Src/managers/CSessionManager.o
-
-$(OBJDIR_DEBUG)/__/__/Src/managers/CResourceManager.o: ../../Src/managers/CResourceManager.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/managers/CResourceManager.cpp -o $(OBJDIR_DEBUG)/__/__/Src/managers/CResourceManager.o
-
-$(OBJDIR_DEBUG)/__/__/Src/managers/CPageManager.o: ../../Src/managers/CPageManager.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/managers/CPageManager.cpp -o $(OBJDIR_DEBUG)/__/__/Src/managers/CPageManager.o
-
-$(OBJDIR_DEBUG)/__/__/Src/managers/CMySQLDBManager.o: ../../Src/managers/CMySQLDBManager.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/managers/CMySQLDBManager.cpp -o $(OBJDIR_DEBUG)/__/__/Src/managers/CMySQLDBManager.o
-
-$(OBJDIR_DEBUG)/__/__/Src/managers/CManagers.o: ../../Src/managers/CManagers.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/managers/CManagers.cpp -o $(OBJDIR_DEBUG)/__/__/Src/managers/CManagers.o
-
-$(OBJDIR_DEBUG)/__/__/Src/managers/CDefaultCommandManager.o: ../../Src/managers/CDefaultCommandManager.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/managers/CDefaultCommandManager.cpp -o $(OBJDIR_DEBUG)/__/__/Src/managers/CDefaultCommandManager.o
-
-$(OBJDIR_DEBUG)/__/__/Src/helpers/CTextHelper.o: ../../Src/helpers/CTextHelper.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../../Src/helpers/CTextHelper.cpp -o $(OBJDIR_DEBUG)/__/__/Src/helpers/CTextHelper.o
-
-clean_debug: 
-	rm -f $(OBJ_DEBUG) $(OUT_DEBUG)
-	rm -rf ../../Bin/Linux/Debug
-	rm -rf $(OBJDIR_DEBUG)/__/__/Src/FCGI
-	rm -rf $(OBJDIR_DEBUG)/__/__/Src/managers
-	rm -rf $(OBJDIR_DEBUG)/__/__/Src/interfaces
-	rm -rf $(OBJDIR_DEBUG)/__/__/Src/helpers
-	rm -rf $(OBJDIR_DEBUG)/__/__/Src
-	rm -rf $(OBJDIR_DEBUG)/__/__/Src/pages
-	rm -rf $(OBJDIR_DEBUG)/__/__/Src/utils
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 
 before_release: 
 	test -d ../../Bin/Linux/Release || mkdir -p ../../Bin/Linux/Release
@@ -196,10 +44,7 @@ before_release:
 	test -d $(OBJDIR_RELEASE)/__/__/Src || mkdir -p $(OBJDIR_RELEASE)/__/__/Src
 	test -d $(OBJDIR_RELEASE)/__/__/Src/pages || mkdir -p $(OBJDIR_RELEASE)/__/__/Src/pages
 	test -d $(OBJDIR_RELEASE)/__/__/Src/utils || mkdir -p $(OBJDIR_RELEASE)/__/__/Src/utils
-<<<<<<< HEAD
 	test -d $(OBJDIR_RELEASE)/__/__/Src/HTTPClient || mkdir -p $(OBJDIR_RELEASE)/__/__/Src/HTTPClient
-=======
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 
 after_release: 
 
@@ -298,7 +143,6 @@ $(OBJDIR_RELEASE)/__/__/Src/managers/CDefaultCommandManager.o: ../../Src/manager
 $(OBJDIR_RELEASE)/__/__/Src/helpers/CTextHelper.o: ../../Src/helpers/CTextHelper.cpp
 	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c ../../Src/helpers/CTextHelper.cpp -o $(OBJDIR_RELEASE)/__/__/Src/helpers/CTextHelper.o
 
-<<<<<<< HEAD
 $(OBJDIR_RELEASE)/__/__/Src/HTTPClient/CHTTPClient.o: ../../Src/HTTPClient/CHTTPClient.cpp
 	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c ../../Src/HTTPClient/CHTTPClient.cpp -o $(OBJDIR_RELEASE)/__/__/Src/HTTPClient/CHTTPClient.o
 
@@ -306,8 +150,6 @@ $(OBJDIR_RELEASE)/__/__/Src/HTTPClient/CProxy.o: ../../Src/HTTPClient/CProxy.cpp
 	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c ../../Src/HTTPClient/CProxy.cpp -o $(OBJDIR_RELEASE)/__/__/Src/HTTPClient/CProxy.o
 
 
-=======
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 clean_release: 
 	rm -f $(OBJ_RELEASE) $(OUT_RELEASE)
 	rm -rf ../../Bin/Linux/Release
@@ -318,13 +160,7 @@ clean_release:
 	rm -rf $(OBJDIR_RELEASE)/__/__/Src
 	rm -rf $(OBJDIR_RELEASE)/__/__/Src/pages
 	rm -rf $(OBJDIR_RELEASE)/__/__/Src/utils
-<<<<<<< HEAD
 	rm -rf $(OBJDIR_RELEASE)/__/__/Src/HTTPClient
-=======
-
-clean:
-	clean_release clean_debug
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 
 install:
 	#mkdir -p /usr/local/include/novemberlib /usr/include/novemberlib	
@@ -333,9 +169,5 @@ install:
 	cp -r ../../Include/*/ /usr/local/include/	
 	cp -r ../../Include/*/ /usr/include/	
 
-<<<<<<< HEAD
 .PHONY: before_release after_release clean_release clean install 
-=======
-.PHONY: before_debug after_debug clean_debug before_release after_release clean_release clean install 
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 

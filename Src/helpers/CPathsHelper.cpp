@@ -1,15 +1,8 @@
 #include "../../Include/novemberlib/helpers/CPathsHelper.h"
 
 CPathsHelper::CPathsHelper()
-<<<<<<< HEAD
     : userContentDirName("usercontent/"), siteContentDirName("sitecontent/")
 {
-=======
-{
-	userContentDirName = "usercontent/";
-	siteContentDirName = "sitecontent/";
-
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 	rootPath = new CPath("");
 }
 
@@ -98,18 +91,10 @@ bool CPath::getIsOnlyForSiteContent() const
 	return isOnlyForSiteContent;
 }
 
-<<<<<<< HEAD
 CPath::CPath(const std::string& dir, const std::string& allowedMIMEs, const bool isOnlyForSiteContent) :
     dir(dir), allowedMIMEs(allowedMIMEs), isOnlyForSiteContent(isOnlyForSiteContent)
 {
 
-=======
-CPath::CPath(const std::string& dir, const std::string& allowedMIMEs, const bool isOnlyForSiteContent)
-{
-	this->dir = dir;
-	this->allowedMIMEs = allowedMIMEs;
-	this->isOnlyForSiteContent = isOnlyForSiteContent;
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 }
 
 CPath::~CPath()

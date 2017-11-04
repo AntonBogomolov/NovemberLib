@@ -92,19 +92,11 @@ CResourceResult CResourceManager::processResourceRequest(CFCGIRequest* currReque
 	{
 		if(isSiteContent) 	resPath = paths->getSiteContentDir() + path->getRelativeDir() + resFileName;
 		else 				resPath = paths->getUserContentDir() + path->getRelativeDir() + resFileName;
-<<<<<<< HEAD
 		
 		const CFileDescriptor* file = fileCache->findOrAddFile(resPath, isSiteContent);		
 		if(!file->getIsValid())
 		{
 			result.setIsSuccess(false);			
-=======
-
-		const CFileDescriptor* file = fileCache->findOrAddFile(resPath, isSiteContent);
-		if(!file->getIsValid())
-		{
-			result.setIsSuccess(false);
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 			return result;
 		}
 		result.setFile(file);
@@ -368,11 +360,7 @@ CFileDescriptor::CFileDescriptor(const std::string& fileIdString, const char* fi
 		data = new char[fileSize];
 		std::memcpy(data, fileData, dataLen);
 
-<<<<<<< HEAD
 		md5Cache = md5(fileData, (size_t)dataLen);
-=======
-		md5Cache = md5(fileData);
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 		MIME = fileMIME;
 		fileType = MIMEType::getInstance()->getFileExt(MIME);
 		etag = fileSize;
@@ -417,13 +405,8 @@ void CFileDescriptor::loadFile()
 		return;
 	}
 
-<<<<<<< HEAD
 	data = new char[fileSize];	
 	file.read(data, fileSize);	
-=======
-	data = new char[fileSize];
-	file.read(data, fileSize);
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 
 	if(!file)
 	{
@@ -432,15 +415,9 @@ void CFileDescriptor::loadFile()
 		delete [] data;
 		file.close();
 		return;
-<<<<<<< HEAD
 	}	
 	md5Cache = md5(data, fileSize);
 	
-=======
-	}
-	md5Cache = md5(data);
-
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 	size_t dotPos = fullFileName.find_last_of(".");
 	if(dotPos == std::string::npos)
 	{
@@ -451,11 +428,7 @@ void CFileDescriptor::loadFile()
 		fileType = fullFileName.substr(dotPos + 1, std::string::npos);
 	}
 	MIME = MIMEType::getInstance()->get(fileType);
-<<<<<<< HEAD
 	
-=======
-
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 	isValid = true;
 	file.close();
 }
@@ -560,16 +533,9 @@ const CFileDescriptor* CFileCache::findOrAddFile(const std::string& fileName, bo
 {
 	const CFileDescriptor* currFile = findFile(fileName);
 	if(!currFile)
-<<<<<<< HEAD
 	{			
 		currFile = addFileToCache(fileName, isAlwaysInCache);
 	}
-=======
-	{
-		currFile = addFileToCache(fileName, isAlwaysInCache);
-	}
-
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 	return currFile;
 }
 

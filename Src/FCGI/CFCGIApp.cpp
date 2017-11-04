@@ -20,17 +20,11 @@
 #include "../../Include/novemberlib/utils/CLog.h"
 #include "../../Include/novemberlib/helpers/CMessageParser.h"
 
-<<<<<<< HEAD
 #include "time.h"
 #include <vector>
 #include <string>
 #include <thread>
 #include <chrono>
-=======
-#include <vector>
-#include <string>
-#include <thread>
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 
 CFCGIApp::CFCGIApp()
 {
@@ -61,26 +55,18 @@ void CFCGIApp::run()
 	CManagers::getInstance()->lock();
 	CConfigHelper* gs = CConfigHelper::getInstance();
 
-<<<<<<< HEAD
 	std::thread* watchThread = new std::thread(&CFCGIApp::watchHandler, this);
 
-=======
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 	const int threadsCnt = gs->getIntParamValue("threadCnt", 2);
 	std::thread* threads = new std::thread[threadsCnt];
 	for(int i = 0; i < threadsCnt; i++)
 	{
 		threads[i] = std::thread(&CFCGIApp::requestHandler, this);
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 	for(int i = 0; i < threadsCnt; i++)
 	{
 		threads[i].join();
 	}
-<<<<<<< HEAD
 	watchThread->join();
 
 	delete [] threads;
@@ -105,9 +91,6 @@ void CFCGIApp::watchHandler()
         }
         std::this_thread::sleep_for(std::chrono::milliseconds(500));
 	}
-=======
-	delete [] threads;
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 }
 
 void CFCGIApp::requestHandler()
@@ -145,11 +128,7 @@ void CFCGIApp::init()
 	if(managers->getPageManager() 		== NULL) 	managers->setPageManager(new CPageManager());
 	if(managers->getCommandManager()	== NULL)	managers->setCommandManager(new CDefaultCommandManager());
 	if(managers->getDBManager()	 		== NULL)	managers->setDBManager(new CMySQLDBManager());
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 	if(gs->getBoolParamValue("isHasDB"))
 	{
 		std::string dbName = gs->getStringParamValue("dbName");

@@ -27,7 +27,6 @@
 				<Option compiler="gcc" />
 				<Option createStaticLib="1" />
 				<Compiler>
-<<<<<<< HEAD
 					<Add option="-O2" />
 					<Add option="-pedantic" />
 					<Add option="-Wextra" />
@@ -35,17 +34,6 @@
 					<Add option="-std=c++11" />
 				</Compiler>
 				<Linker>
-=======
-					<Add option="-march=corei7" />
-					<Add option="-O3" />
-					<Add option="-pedantic" />
-					<Add option="-std=c++0x" />
-					<Add option="-Wextra" />
-					<Add option="-Wall" />
-				</Compiler>
-				<Linker>
-					<Add option="-s" />
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 					<Add option="-pthread -lfcgi -lfcgi++ -lmysqlclient -lepeg" />
 				</Linker>
 			</Target>
@@ -53,7 +41,6 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-<<<<<<< HEAD
 		<Unit filename="../../Include/novemberlib/CBan.h" />
 		<Unit filename="../../Include/novemberlib/CDefaultUser.h" />
 		<Unit filename="../../Include/novemberlib/CHTMLTemplate.h" />
@@ -125,75 +112,6 @@
 		<Unit filename="../../Src/utils/URI.cpp" />
 		<Unit filename="../../Src/utils/md5.cpp" />
 		<Unit filename="../../Src/utils/utils.cpp" />
-=======
-		<Unit filename="../../Include/CBan.h" />
-		<Unit filename="../../Include/CDefaultUser.h" />
-		<Unit filename="../../Include/CHTMLTemplate.h" />
-		<Unit filename="../../Include/FCGI/CFCGIApp.h" />
-		<Unit filename="../../Include/FCGI/CFCGIRequest.h" />
-		<Unit filename="../../Include/FCGI/CFCGIRequestHandler.h" />
-		<Unit filename="../../Include/helpers/CConfigHelper.h" />
-		<Unit filename="../../Include/helpers/CMessageParser.h" />
-		<Unit filename="../../Include/helpers/CPathsHelper.h" />
-		<Unit filename="../../Include/helpers/CSyncHelper.h" />
-		<Unit filename="../../Include/helpers/CTemplateHelper.h" />
-		<Unit filename="../../Include/interfaces/IErrorMessage.h" />
-		<Unit filename="../../Include/interfaces/IJSONSerializer.h" />
-		<Unit filename="../../Include/interfaces/IStringSerializer.h" />
-		<Unit filename="../../Include/interfaces/ITemplateSingleton.h" />
-		<Unit filename="../../Include/interfaces/IUncopyable.h" />
-		<Unit filename="../../Include/interfaces/IValidTester.h" />
-		<Unit filename="../../Include/managers/CCommandsManager.h" />
-		<Unit filename="../../Include/managers/CDBManager.h" />
-		<Unit filename="../../Include/managers/CDefaultCommandManager.h" />
-		<Unit filename="../../Include/managers/CDefaultPageManager.h" />
-		<Unit filename="../../Include/managers/CManagers.h" />
-		<Unit filename="../../Include/managers/CMySQLDBManager.h" />
-		<Unit filename="../../Include/managers/CPageManager.h" />
-		<Unit filename="../../Include/managers/CResourceManager.h" />
-		<Unit filename="../../Include/managers/CSessionManager.h" />
-		<Unit filename="../../Include/pages/CErrorPage.h" />
-		<Unit filename="../../Include/pages/CIndexPage.h" />
-		<Unit filename="../../Include/pages/CPage.h" />
-		<Unit filename="../../Include/utils/CCodeTimer.h" />
-		<Unit filename="../../Include/utils/CLog.h" />
-		<Unit filename="../../Include/utils/MIMEType.h" />
-		<Unit filename="../../Include/utils/URI.h" />
-		<Unit filename="../../Include/utils/config.h" />
-		<Unit filename="../../Include/utils/md5.h" />
-		<Unit filename="../../Include/utils/utils.h" />
-		<Unit filename="../../Scr/CBan.cpp" />
-		<Unit filename="../../Scr/CDefaultUser.cpp" />
-		<Unit filename="../../Scr/CHTMLTemplate.cpp" />
-		<Unit filename="../../Scr/FCGI/CFCGIApp.cpp" />
-		<Unit filename="../../Scr/FCGI/CFCGIRequest.cpp" />
-		<Unit filename="../../Scr/FCGI/CFCGIRequestHandler.cpp" />
-		<Unit filename="../../Scr/helpers/CConfigHelper.cpp" />
-		<Unit filename="../../Scr/helpers/CMessageParser.cpp" />
-		<Unit filename="../../Scr/helpers/CPathsHelper.cpp" />
-		<Unit filename="../../Scr/helpers/CSyncHelper.cpp" />
-		<Unit filename="../../Scr/helpers/CTemplateHelper.cpp" />
-		<Unit filename="../../Scr/interfaces/IErrorMessage.cpp" />
-		<Unit filename="../../Scr/interfaces/IValidTester.cpp" />
-		<Unit filename="../../Scr/managers/CCommandsManager.cpp" />
-		<Unit filename="../../Scr/managers/CDBManager.cpp" />
-		<Unit filename="../../Scr/managers/CDefaultCommandManager.cpp" />
-		<Unit filename="../../Scr/managers/CDefaultPageManager.cpp" />
-		<Unit filename="../../Scr/managers/CManagers.cpp" />
-		<Unit filename="../../Scr/managers/CMySQLDBManager.cpp" />
-		<Unit filename="../../Scr/managers/CPageManager.cpp" />
-		<Unit filename="../../Scr/managers/CResourceManager.cpp" />
-		<Unit filename="../../Scr/managers/CSessionManager.cpp" />
-		<Unit filename="../../Scr/pages/CErrorPage.cpp" />
-		<Unit filename="../../Scr/pages/CIndexPage.cpp" />
-		<Unit filename="../../Scr/pages/CPage.cpp" />
-		<Unit filename="../../Scr/utils/CCodeTimer.cpp" />
-		<Unit filename="../../Scr/utils/CLog.cpp" />
-		<Unit filename="../../Scr/utils/MIMEType.cpp" />
-		<Unit filename="../../Scr/utils/URI.cpp" />
-		<Unit filename="../../Scr/utils/md5.cpp" />
-		<Unit filename="../../Scr/utils/utils.cpp" />
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 		<Extensions>
 			<code_completion />
 			<debugger />

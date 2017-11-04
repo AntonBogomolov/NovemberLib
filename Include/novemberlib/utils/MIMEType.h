@@ -26,12 +26,8 @@ class MIMEType : public ITemplateSingleton<MIMEType>
     std::map<std::string, std::string> exts;
     std::string default_type;
 
-<<<<<<< HEAD
     void init();
     friend MIMEType* ITemplateSingleton::getInstance();
-=======
-	friend MIMEType* ITemplateSingleton::getInstance();
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
     MIMEType();
 };
 

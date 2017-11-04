@@ -19,10 +19,7 @@ CFCGIRequestHandler::CFCGIRequestHandler(int listenSocket) :
 	serr = NULL;
 	options = 0;
 	flushed = true;
-<<<<<<< HEAD
 	_listenSocket = listenSocket;
-=======
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 
 	files = new CRequestFileSet();
 
@@ -155,11 +152,7 @@ void CFCGIRequestHandler::endRequest()
         while(it != header.map().end())
         {
             out << it->first << ": " << it->second << "\r\n";
-<<<<<<< HEAD
             ++it;
-=======
-            it++;
->>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
         }
 
         out << header_stream.str();
