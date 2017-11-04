@@ -1,0 +1,740 @@
+# depslib dependency file v1.0
+1449914855 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/CBan.cpp
+	"../Include/CBan.h"
+	"../Include/managers/CManagers.h"
+	"../Include/managers/CDBManager.h"
+	"../Include/utils/utils.h"
+
+1446231417 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/CBan.h
+
+1449914887 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/managers/CManagers.h
+	"../interfaces/ITemplateSingleton.h"
+
+1449930575 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/interfaces/ITemplateSingleton.h
+	"IUncopyable.h"
+
+1449930575 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/interfaces/IUncopyable.h
+	"../utils/config.h"
+
+1449914910 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/managers/CDBManager.h
+	"../interfaces/IUncopyable.h"
+	<string>
+	<vector>
+	<memory>
+
+1449930601 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/utils/utils.h
+	"config.h"
+	<vector>
+	<iostream>
+	<string>
+	<sstream>
+	<time.h>
+	<climits>
+	<sys/types.h>
+	<sys/stat.h>
+
+1449915279 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/CDefaultUser.cpp
+	"../Include/CDefaultUser.h"
+	"../Include/utils/utils.h"
+	"../Include/utils/md5.h"
+	"../Include/utils/CLog.h"
+	"../Include/CBan.h"
+	"../Include/helpers/CConfigHelper.h"
+	"../Include/managers/CManagers.h"
+	"../Include/managers/CDBManager.h"
+	<cstdlib>
+
+1449915167 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/CDefaultUser.h
+	"interfaces/IValidTester.h"
+	<vector>
+	<string>
+
+1449930575 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/interfaces/IValidTester.h
+	"../utils/config.h"
+
+1448796896 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/utils/md5.h
+	<cstring>
+	<iostream>
+
+1449915211 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/utils/CLog.h
+	"../helpers/CSyncHelper.h"
+	"../interfaces/ITemplateSingleton.h"
+	<string>
+	<sstream>
+	<iostream>
+
+1449915237 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/helpers/CSyncHelper.h
+	"../interfaces/ITemplateSingleton.h"
+	<mutex>
+	<chrono>
+	<thread>
+
+1449915244 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/helpers/CConfigHelper.h
+	"../interfaces/ITemplateSingleton.h"
+	<map>
+	<string>
+	<fstream>
+
+1449915324 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/CHTMLTemplate.cpp
+	"../Include/CHTMLTemplate.h"
+	"../Include/utils/utils.h"
+	"../Include/utils/CLog.h"
+
+1448384834 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/CHTMLTemplate.h
+	<string>
+	<vector>
+	<map>
+
+1449915518 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/FCGI/CFCGIApp.cpp
+	"../../Include/FCGI/CFCGIApp.h"
+	"../../Include/FCGI/CFCGIRequest.h"
+	"../../Include/FCGI/CFCGIRequestHandler.h"
+	"../../Include/utils/utils.h"
+	"../../Include/managers/CDefaultPageManager.h"
+	"../../Include/managers/CDefaultCommandManager.h"
+	"../../Include/managers/CResourceManager.h"
+	"../../Include/managers/CMySQLDBManager.h"
+	"../../Include/managers/CManagers.h"
+	"../../Include/helpers/CPathsHelper.h"
+	"../../Include/helpers/CConfigHelper.h"
+	"../../Include/helpers/CSyncHelper.h"
+	"../../Include/helpers/CTemplateHelper.h"
+	"../../Include/utils/CLog.h"
+	"../../Include/helpers/CMessageParser.h"
+	<vector>
+	<string>
+	<thread>
+
+1448131179 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/FCGI/CFCGIApp.h
+
+1448122106 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/FCGI/CFCGIRequest.h
+	"CFCGIRequestHandler.h"
+	<string>
+	<sstream>
+
+1449915487 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/FCGI/CFCGIRequestHandler.h
+	"../interfaces/IUncopyable.h"
+	<string>
+	<vector>
+	<map>
+	<iostream>
+	<sstream>
+	<ctime>
+	<cstdlib>
+	<fcgio.h>
+
+1446135276 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/managers/CDefaultPageManager.h
+	"CPageManager.h"
+
+1449915495 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/managers/CPageManager.h
+	"../interfaces/IUncopyable.h"
+	<string>
+	<vector>
+
+1447584282 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/managers/CDefaultCommandManager.h
+	"CCommandsManager.h"
+
+1449915542 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/managers/CCommandsManager.h
+	"../interfaces/IUncopyable.h"
+	<string>
+
+1449915547 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/managers/CResourceManager.h
+	"../interfaces/IUncopyable.h"
+	<string>
+	<vector>
+
+1448204774 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/managers/CMySQLDBManager.h
+	"CDBManager.h"
+	<mysql/mysql.h>
+
+1449915559 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/helpers/CPathsHelper.h
+	"../interfaces/ITemplateSingleton.h"
+	<string>
+	<vector>
+
+1449916460 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/helpers/CTemplateHelper.h
+	"../interfaces/ITemplateSingleton.h"
+	<string>
+	<vector>
+
+1449915580 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/helpers/CMessageParser.h
+	"../interfaces/ITemplateSingleton.h"
+	<string>
+	<vector>
+
+1449916007 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/FCGI/CFCGIRequest.cpp
+	"../../Include/FCGI/CFCGIRequest.h"
+	"../../Include/FCGI/CFCGIApp.h"
+	"../../Include/managers/CPageManager.h"
+	"../../Include/managers/CResourceManager.h"
+	"../../Include/managers/CCommandsManager.h"
+	"../../Include/managers/CSessionManager.h"
+	"../../Include/managers/CManagers.h"
+	"../../Include/utils/utils.h"
+	"../../Include/utils/CLog.h"
+	"../../Include/utils/CCodeTimer.h"
+	"../../Include/pages/CErrorPage.h"
+	"../../Include/CDefaultUser.h"
+
+1449916224 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/managers/CSessionManager.h
+	"../interfaces/IUncopyable.h"
+	<string>
+
+1444474691 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/utils/CCodeTimer.h
+	<time.h>
+
+1449916246 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/pages/CErrorPage.h
+	"CPage.h"
+	"../interfaces/IErrorMessage.h"
+
+1446633263 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/pages/CPage.h
+	<iostream>
+	<string>
+	<vector>
+	<map>
+
+1449930005 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/interfaces/IErrorMessage.h
+	"../utils/config.h"
+	<string>
+
+1449916284 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/FCGI/CFCGIRequestHandler.cpp
+	"../../Include/FCGI/CFCGIRequestHandler.h"
+	"../../Include/utils/utils.h"
+	"../../Include/utils/URI.h"
+	"../../Include/utils/MIMEType.h"
+	"../../Include/managers/CManagers.h"
+	"../../Include/managers/CResourceManager.h"
+	"../../Include/helpers/CConfigHelper.h"
+	"../../Include/utils/CLog.h"
+
+1439898262 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/utils/URI.h
+	<iostream>
+
+1449916264 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/utils/MIMEType.h
+	"../interfaces/ITemplateSingleton.h"
+	<map>
+
+1449916325 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/helpers/CConfigHelper.cpp
+	"../../Include/helpers/CConfigHelper.h"
+	"../../Include/utils/CLog.h"
+
+1449916374 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/helpers/CMessageParser.cpp
+	"../../Include/helpers/CMessageParser.h"
+	"../../Include/utils/CLog.h"
+	"../../Include/utils/utils.h"
+
+1449916386 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/helpers/CPathsHelper.cpp
+	"../../Include/helpers/CPathsHelper.h"
+
+1449916397 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/helpers/CSyncHelper.cpp
+	"../../Include/helpers/CSyncHelper.h"
+
+1449916443 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/helpers/CTemplateHelper.cpp
+	"../../Include/helpers/CTemplateHelper.h"
+	"../../Include/CHTMLTemplate.h"
+	"../../Include/managers/CManagers.h"
+	"../../Include/managers/CResourceManager.h"
+	"../../Include/helpers/CPathsHelper.h"
+
+1449916493 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/interfaces/IErrorMessage.cpp
+	"../../Include/interfaces/IErrorMessage.h"
+
+1449916506 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/interfaces/IValidTester.cpp
+	"../../Include/interfaces/IValidTester.h"
+
+1449916568 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/managers/CCommandsManager.cpp
+	"../../Include/managers/CCommandsManager.h"
+	"../../Include/managers/CManagers.h"
+	"../../Include/managers/CDBManager.h"
+	"../../Include/FCGI/CFCGIRequest.h"
+	"../../Include/utils/utils.h"
+	"../../Include/utils/md5.h"
+	"../../Include/utils/CLog.h"
+	"../../Include/CDefaultUser.h"
+	<string>
+
+1449916600 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/managers/CDBManager.cpp
+	"../../Include/managers/CDBManager.h"
+	"../../Include/managers/CManagers.h"
+	"../../Include/utils/utils.h"
+	"../../Include/utils/CLog.h"
+
+1449916639 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/managers/CDefaultCommandManager.cpp
+	"../../Include/managers/CDefaultCommandManager.h"
+	"../../Include/utils/utils.h"
+	"../../Include/FCGI/CFCGIRequest.h"
+	"../../Include/CDefaultUser.h"
+	"../../Include/helpers/CConfigHelper.h"
+	"../../Include/managers/CManagers.h"
+	<string>
+
+1449916702 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/managers/CDefaultPageManager.cpp
+	"../../Include/managers/CDefaultPageManager.h"
+	"../../Include/pages/CIndexPage.h"
+
+1446633665 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/pages/CIndexPage.h
+	"CPage.h"
+
+1449916714 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/managers/CManagers.cpp
+	"../../Include/managers/CManagers.h"
+	"../../Include/managers/CPageManager.h"
+	"../../Include/managers/CSessionManager.h"
+	"../../Include/managers/CCommandsManager.h"
+	"../../Include/managers/CResourceManager.h"
+	"../../Include/managers/CDBManager.h"
+
+1449916734 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/managers/CMySQLDBManager.cpp
+	"../../Include/managers/CMySQLDBManager.h"
+	"../../Include/utils/utils.h"
+	"../../Include/utils/CLog.h"
+	"../../Include/managers/CManagers.h"
+
+1449916840 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/managers/CPageManager.cpp
+	"../../Include/managers/CPageManager.h"
+	"../../Include/FCGI/CFCGIRequest.h"
+	"../../Include/pages/CErrorPage.h"
+	"../../Include/pages/CIndexPage.h"
+	"../../Include/CDefaultUser.h"
+	"../../Include/utils/CLog.h"
+	"../../Include/helpers/CSyncHelper.h"
+
+1449916903 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/managers/CResourceManager.cpp
+	"../../Include/managers/CResourceManager.h"
+	"../../Include/FCGI/CFCGIRequest.h"
+	"../../Include/managers/CManagers.h"
+	"../../Include/helpers/CSyncHelper.h"
+	"../../Include/helpers/CPathsHelper.h"
+	"../../Include/helpers/CConfigHelper.h"
+	"../../Include/utils/MIMEType.h"
+	"../../Include/utils/CLog.h"
+	"../../Include/utils/utils.h"
+	"../../Include/utils/md5.h"
+	<string>
+	<fstream>
+	<sstream>
+
+1449916949 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/managers/CSessionManager.cpp
+	"../../Include/managers/CSessionManager.h"
+	"../../Include/managers/CManagers.h"
+	"../../Include/managers/CDBManager.h"
+	"../../Include/utils/utils.h"
+	"../../Include/CDefaultUser.h"
+	"../../Include/helpers/CConfigHelper.h"
+	"../../Include/managers/CManagers.h"
+	"../../Include/FCGI/CFCGIRequest.h"
+
+1449916964 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/pages/CErrorPage.cpp
+	"../../Include/pages/CErrorPage.h"
+
+1449917027 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/pages/CIndexPage.cpp
+	"../../Include/pages/CIndexPage.h"
+
+1449917023 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/pages/CPage.cpp
+	"../../Include/pages/CPage.h"
+	"../../Include/utils/utils.h"
+	"../../Include/FCGI/CFCGIRequest.h"
+	"../../Include/managers/CManagers.h"
+	"../../Include/helpers/CTemplateHelper.h"
+	"../../Include/CHTMLTemplate.h"
+	"../../Include/utils/CLog.h"
+
+1449917043 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/utils/CCodeTimer.cpp
+	"../../Include/utils/CCodeTimer.h"
+
+1449917060 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/utils/CLog.cpp
+	"../../Include/utils/CLog.h"
+	<iostream>
+	<time.h>
+	"../../Include/helpers/CConfigHelper.h"
+	"../../Include/managers/CManagers.h"
+
+1449917085 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/utils/md5.cpp
+	"../../Include/utils/md5.h"
+	<cstdio>
+
+1449930755 /run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Include/utils/config.h
+
+1449917101 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/utils/MIMEType.cpp
+	"../../Include/utils/MIMEType.h"
+
+1449917101 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/utils/URI.cpp
+	"../../Include/utils/URI.h"
+
+1449917100 source:/run/user/1000/gvfs/smb-share:server=fileserver,share=shared/Projects/FCGI/Lib/Scr/utils/utils.cpp
+	"../../Include/utils/utils.h"
+	<fstream>
+	<algorithm>
+	<sys/stat.h>
+
+1450104641 source:/home/anton/projects/FCGI/Lib/Src/CBan.cpp
+	"../Include/novemberlib/CBan.h"
+	"../Include/novemberlib/managers/CManagers.h"
+	"../Include/novemberlib/managers/CDBManager.h"
+	"../Include/novemberlib/utils/utils.h"
+
+1446231417 /home/anton/projects/FCGI/Lib/Include/novemberlib/CBan.h
+
+1449914887 /home/anton/projects/FCGI/Lib/Include/novemberlib/managers/CManagers.h
+	"../interfaces/ITemplateSingleton.h"
+
+1449930575 /home/anton/projects/FCGI/Lib/Include/novemberlib/interfaces/ITemplateSingleton.h
+	"IUncopyable.h"
+
+1449930575 /home/anton/projects/FCGI/Lib/Include/novemberlib/interfaces/IUncopyable.h
+	"../utils/config.h"
+
+1450124009 /home/anton/projects/FCGI/Lib/Include/novemberlib/utils/config.h
+
+1492091166 /home/anton/projects/FCGI/Lib/Include/novemberlib/managers/CDBManager.h
+	"../interfaces/IUncopyable.h"
+	<string>
+	<vector>
+	<memory>
+
+1493312408 /home/anton/projects/FCGI/Lib/Include/novemberlib/utils/utils.h
+	"config.h"
+	<vector>
+	<iostream>
+	<string>
+	<sstream>
+	<time.h>
+	<climits>
+	<sys/types.h>
+	<sys/stat.h>
+
+1491762147 source:/home/anton/projects/FCGI/Lib/Src/CDefaultUser.cpp
+	"../Include/novemberlib/CDefaultUser.h"
+	"../Include/novemberlib/utils/utils.h"
+	"../Include/novemberlib/utils/md5.h"
+	"../Include/novemberlib/utils/CLog.h"
+	"../Include/novemberlib/CBan.h"
+	"../Include/novemberlib/helpers/CConfigHelper.h"
+	"../Include/novemberlib/managers/CManagers.h"
+	"../Include/novemberlib/managers/CDBManager.h"
+	"../Include/novemberlib/managers/CSessionManager.h"
+	<cstdlib>
+
+1453552231 /home/anton/projects/FCGI/Lib/Include/novemberlib/CDefaultUser.h
+	"interfaces/IValidTester.h"
+	<vector>
+	<string>
+
+1449930575 /home/anton/projects/FCGI/Lib/Include/novemberlib/interfaces/IValidTester.h
+	"../utils/config.h"
+
+1448796896 /home/anton/projects/FCGI/Lib/Include/novemberlib/utils/md5.h
+	<cstring>
+	<iostream>
+
+1492871942 /home/anton/projects/FCGI/Lib/Include/novemberlib/utils/CLog.h
+	"../helpers/CSyncHelper.h"
+	"../interfaces/ITemplateSingleton.h"
+	<string>
+	<sstream>
+	<iostream>
+	<fstream>
+
+1449915237 /home/anton/projects/FCGI/Lib/Include/novemberlib/helpers/CSyncHelper.h
+	"../interfaces/ITemplateSingleton.h"
+	<mutex>
+	<chrono>
+	<thread>
+
+1488283814 /home/anton/projects/FCGI/Lib/Include/novemberlib/helpers/CConfigHelper.h
+	"../interfaces/ITemplateSingleton.h"
+	<map>
+	<string>
+	<fstream>
+
+1475778077 /home/anton/projects/FCGI/Lib/Include/novemberlib/managers/CSessionManager.h
+	"../interfaces/IUncopyable.h"
+	"../CDefaultUser.h"
+	<string>
+
+1450104634 source:/home/anton/projects/FCGI/Lib/Src/CHTMLTemplate.cpp
+	"../Include/novemberlib/CHTMLTemplate.h"
+	"../Include/novemberlib/utils/utils.h"
+	"../Include/novemberlib/utils/CLog.h"
+
+1448384834 /home/anton/projects/FCGI/Lib/Include/novemberlib/CHTMLTemplate.h
+	<string>
+	<vector>
+	<map>
+
+1491659700 source:/home/anton/projects/FCGI/Lib/Src/FCGI/CFCGIApp.cpp
+	"../../Include/novemberlib/FCGI/CFCGIApp.h"
+	"../../Include/novemberlib/FCGI/CFCGIRequest.h"
+	"../../Include/novemberlib/FCGI/CFCGIRequestHandler.h"
+	"../../Include/novemberlib/utils/utils.h"
+	"../../Include/novemberlib/managers/CDefaultCommandManager.h"
+	"../../Include/novemberlib/managers/CResourceManager.h"
+	"../../Include/novemberlib/managers/CMySQLDBManager.h"
+	"../../Include/novemberlib/managers/CPageManager.h"
+	"../../Include/novemberlib/managers/CSessionManager.h"
+	"../../Include/novemberlib/managers/CManagers.h"
+	"../../Include/novemberlib/helpers/CPathsHelper.h"
+	"../../Include/novemberlib/helpers/CConfigHelper.h"
+	"../../Include/novemberlib/helpers/CSyncHelper.h"
+	"../../Include/novemberlib/helpers/CTemplateHelper.h"
+	"../../Include/novemberlib/helpers/CTextHelper.h"
+	"../../Include/novemberlib/utils/CLog.h"
+	"../../Include/novemberlib/helpers/CMessageParser.h"
+	"time.h"
+	<vector>
+	<string>
+	<thread>
+	<chrono>
+
+1490878918 /home/anton/projects/FCGI/Lib/Include/novemberlib/FCGI/CFCGIApp.h
+
+1450017673 /home/anton/projects/FCGI/Lib/Include/novemberlib/FCGI/CFCGIRequest.h
+	"CFCGIRequestHandler.h"
+	<string>
+	<sstream>
+
+1450108366 /home/anton/projects/FCGI/Lib/Include/novemberlib/FCGI/CFCGIRequestHandler.h
+	"../interfaces/IUncopyable.h"
+	<string>
+	<vector>
+	<map>
+	<iostream>
+	<sstream>
+	<ctime>
+	<cstdlib>
+	<fcgio.h>
+
+1447584282 /home/anton/projects/FCGI/Lib/Include/novemberlib/managers/CDefaultCommandManager.h
+	"CCommandsManager.h"
+
+1490028642 /home/anton/projects/FCGI/Lib/Include/novemberlib/managers/CCommandsManager.h
+	"../interfaces/IUncopyable.h"
+	<string>
+
+1449915547 /home/anton/projects/FCGI/Lib/Include/novemberlib/managers/CResourceManager.h
+	"../interfaces/IUncopyable.h"
+	<string>
+	<vector>
+
+1492091161 /home/anton/projects/FCGI/Lib/Include/novemberlib/managers/CMySQLDBManager.h
+	"CDBManager.h"
+	<mysql/mysql.h>
+
+1468253202 /home/anton/projects/FCGI/Lib/Include/novemberlib/managers/CPageManager.h
+	"../pages/CPage.h"
+	"../interfaces/IUncopyable.h"
+	<string>
+	<vector>
+
+1450019915 /home/anton/projects/FCGI/Lib/Include/novemberlib/pages/CPage.h
+	<iostream>
+	<string>
+	<vector>
+	<map>
+
+1451933209 /home/anton/projects/FCGI/Lib/Include/novemberlib/helpers/CPathsHelper.h
+	"../interfaces/ITemplateSingleton.h"
+	<string>
+	<vector>
+
+1450193000 /home/anton/projects/FCGI/Lib/Include/novemberlib/helpers/CTemplateHelper.h
+	"../interfaces/ITemplateSingleton.h"
+	<string>
+	<vector>
+
+1450192930 /home/anton/projects/FCGI/Lib/Include/novemberlib/helpers/CTextHelper.h
+	"../interfaces/ITemplateSingleton.h"
+	<string>
+	<vector>
+	<map>
+
+1449915580 /home/anton/projects/FCGI/Lib/Include/novemberlib/helpers/CMessageParser.h
+	"../interfaces/ITemplateSingleton.h"
+	<string>
+	<vector>
+
+1490882000 source:/home/anton/projects/FCGI/Lib/Src/FCGI/CFCGIRequest.cpp
+	"../../Include/novemberlib/FCGI/CFCGIRequest.h"
+	"../../Include/novemberlib/FCGI/CFCGIApp.h"
+	"../../Include/novemberlib/managers/CPageManager.h"
+	"../../Include/novemberlib/managers/CResourceManager.h"
+	"../../Include/novemberlib/managers/CCommandsManager.h"
+	"../../Include/novemberlib/managers/CSessionManager.h"
+	"../../Include/novemberlib/managers/CManagers.h"
+	"../../Include/novemberlib/helpers/CTextHelper.h"
+	"../../Include/novemberlib/utils/utils.h"
+	"../../Include/novemberlib/utils/CLog.h"
+	"../../Include/novemberlib/utils/CCodeTimer.h"
+	"../../Include/novemberlib/pages/CErrorPage.h"
+	"../../Include/novemberlib/CDefaultUser.h"
+
+1444474691 /home/anton/projects/FCGI/Lib/Include/novemberlib/utils/CCodeTimer.h
+	<time.h>
+
+1450008325 /home/anton/projects/FCGI/Lib/Include/novemberlib/pages/CErrorPage.h
+	"CPage.h"
+	"../interfaces/IErrorMessage.h"
+
+1449930005 /home/anton/projects/FCGI/Lib/Include/novemberlib/interfaces/IErrorMessage.h
+	"../utils/config.h"
+	<string>
+
+1487752108 source:/home/anton/projects/FCGI/Lib/Src/FCGI/CFCGIRequestHandler.cpp
+	"../../Include/novemberlib/FCGI/CFCGIRequestHandler.h"
+	"../../Include/novemberlib/utils/utils.h"
+	"../../Include/novemberlib/utils/URI.h"
+	"../../Include/novemberlib/utils/MIMEType.h"
+	"../../Include/novemberlib/managers/CManagers.h"
+	"../../Include/novemberlib/managers/CResourceManager.h"
+	"../../Include/novemberlib/helpers/CConfigHelper.h"
+	"../../Include/novemberlib/utils/CLog.h"
+
+1439898262 /home/anton/projects/FCGI/Lib/Include/novemberlib/utils/URI.h
+	<iostream>
+
+1475781333 /home/anton/projects/FCGI/Lib/Include/novemberlib/utils/MIMEType.h
+	"../interfaces/ITemplateSingleton.h"
+	<map>
+
+1488375876 source:/home/anton/projects/FCGI/Lib/Src/helpers/CConfigHelper.cpp
+	"../../Include/novemberlib/helpers/CConfigHelper.h"
+	"../../Include/novemberlib/utils/CLog.h"
+
+1450104641 source:/home/anton/projects/FCGI/Lib/Src/helpers/CMessageParser.cpp
+	"../../Include/novemberlib/helpers/CMessageParser.h"
+	"../../Include/novemberlib/utils/CLog.h"
+	"../../Include/novemberlib/utils/utils.h"
+
+1451933387 source:/home/anton/projects/FCGI/Lib/Src/helpers/CPathsHelper.cpp
+	"../../Include/novemberlib/helpers/CPathsHelper.h"
+
+1450104641 source:/home/anton/projects/FCGI/Lib/Src/helpers/CSyncHelper.cpp
+	"../../Include/novemberlib/helpers/CSyncHelper.h"
+
+1451933288 source:/home/anton/projects/FCGI/Lib/Src/helpers/CTemplateHelper.cpp
+	"../../Include/novemberlib/helpers/CTemplateHelper.h"
+	"../../Include/novemberlib/CHTMLTemplate.h"
+	"../../Include/novemberlib/managers/CManagers.h"
+	"../../Include/novemberlib/managers/CResourceManager.h"
+	"../../Include/novemberlib/helpers/CPathsHelper.h"
+
+1450104634 source:/home/anton/projects/FCGI/Lib/Src/interfaces/IErrorMessage.cpp
+	"../../Include/novemberlib/interfaces/IErrorMessage.h"
+
+1450104634 source:/home/anton/projects/FCGI/Lib/Src/interfaces/IValidTester.cpp
+	"../../Include/novemberlib/interfaces/IValidTester.h"
+
+1490033915 source:/home/anton/projects/FCGI/Lib/Src/managers/CCommandsManager.cpp
+	"../../Include/novemberlib/managers/CCommandsManager.h"
+	"../../Include/novemberlib/managers/CManagers.h"
+	"../../Include/novemberlib/managers/CDBManager.h"
+	"../../Include/novemberlib/FCGI/CFCGIRequest.h"
+	"../../Include/novemberlib/utils/utils.h"
+	"../../Include/novemberlib/utils/md5.h"
+	"../../Include/novemberlib/utils/CLog.h"
+	"../../Include/novemberlib/CDefaultUser.h"
+	<string>
+
+1490877183 source:/home/anton/projects/FCGI/Lib/Src/managers/CDBManager.cpp
+	"../../Include/novemberlib/managers/CDBManager.h"
+	"../../Include/novemberlib/helpers/CSyncHelper.h"
+	"../../Include/novemberlib/managers/CManagers.h"
+	"../../Include/novemberlib/utils/utils.h"
+	"../../Include/novemberlib/utils/CLog.h"
+
+1453552276 source:/home/anton/projects/FCGI/Lib/Src/managers/CDefaultCommandManager.cpp
+	"../../Include/novemberlib/managers/CDefaultCommandManager.h"
+	"../../Include/novemberlib/utils/utils.h"
+	"../../Include/novemberlib/FCGI/CFCGIRequest.h"
+	"../../Include/novemberlib/CDefaultUser.h"
+	"../../Include/novemberlib/helpers/CConfigHelper.h"
+	"../../Include/novemberlib/managers/CManagers.h"
+	<string>
+
+1450104642 source:/home/anton/projects/FCGI/Lib/Src/managers/CManagers.cpp
+	"../../Include/novemberlib/managers/CManagers.h"
+	"../../Include/novemberlib/managers/CPageManager.h"
+	"../../Include/novemberlib/managers/CSessionManager.h"
+	"../../Include/novemberlib/managers/CCommandsManager.h"
+	"../../Include/novemberlib/managers/CResourceManager.h"
+	"../../Include/novemberlib/managers/CDBManager.h"
+
+1492091181 source:/home/anton/projects/FCGI/Lib/Src/managers/CMySQLDBManager.cpp
+	"../../Include/novemberlib/managers/CMySQLDBManager.h"
+	"../../Include/novemberlib/utils/utils.h"
+	"../../Include/novemberlib/utils/CLog.h"
+	"../../Include/novemberlib/managers/CManagers.h"
+
+1450104642 source:/home/anton/projects/FCGI/Lib/Src/managers/CPageManager.cpp
+	"../../Include/novemberlib/managers/CPageManager.h"
+	"../../Include/novemberlib/FCGI/CFCGIRequest.h"
+	"../../Include/novemberlib/pages/CErrorPage.h"
+	"../../Include/novemberlib/CDefaultUser.h"
+	"../../Include/novemberlib/utils/CLog.h"
+	"../../Include/novemberlib/helpers/CSyncHelper.h"
+
+1480233738 source:/home/anton/projects/FCGI/Lib/Src/managers/CResourceManager.cpp
+	"../../Include/novemberlib/managers/CResourceManager.h"
+	"../../Include/novemberlib/FCGI/CFCGIRequest.h"
+	"../../Include/novemberlib/managers/CManagers.h"
+	"../../Include/novemberlib/helpers/CSyncHelper.h"
+	"../../Include/novemberlib/helpers/CPathsHelper.h"
+	"../../Include/novemberlib/helpers/CConfigHelper.h"
+	"../../Include/novemberlib/utils/MIMEType.h"
+	"../../Include/novemberlib/utils/CLog.h"
+	"../../Include/novemberlib/utils/utils.h"
+	"../../Include/novemberlib/utils/md5.h"
+	<string>
+	<fstream>
+	<sstream>
+
+1475780225 source:/home/anton/projects/FCGI/Lib/Src/managers/CSessionManager.cpp
+	"../../Include/novemberlib/managers/CSessionManager.h"
+	"../../Include/novemberlib/managers/CManagers.h"
+	"../../Include/novemberlib/managers/CDBManager.h"
+	"../../Include/novemberlib/utils/utils.h"
+	"../../Include/novemberlib/utils/CLog.h"
+	"../../Include/novemberlib/CDefaultUser.h"
+	"../../Include/novemberlib/helpers/CConfigHelper.h"
+	"../../Include/novemberlib/managers/CManagers.h"
+	"../../Include/novemberlib/FCGI/CFCGIRequest.h"
+
+1450104640 source:/home/anton/projects/FCGI/Lib/Src/pages/CErrorPage.cpp
+	"../../Include/novemberlib/pages/CErrorPage.h"
+
+1450105434 source:/home/anton/projects/FCGI/Lib/Src/pages/CPage.cpp
+	"../../Include/novemberlib/pages/CPage.h"
+	"../../Include/novemberlib/utils/utils.h"
+	"../../Include/novemberlib/FCGI/CFCGIRequest.h"
+	"../../Include/novemberlib/managers/CManagers.h"
+	"../../Include/novemberlib/helpers/CTemplateHelper.h"
+	"../../Include/novemberlib/CHTMLTemplate.h"
+	"../../Include/novemberlib/utils/CLog.h"
+
+1450104641 source:/home/anton/projects/FCGI/Lib/Src/utils/CCodeTimer.cpp
+	"../../Include/novemberlib/utils/CCodeTimer.h"
+
+1450104641 source:/home/anton/projects/FCGI/Lib/Src/utils/CLog.cpp
+	"../../Include/novemberlib/utils/CLog.h"
+	"../../Include/novemberlib/helpers/CConfigHelper.h"
+	"../../Include/novemberlib/managers/CManagers.h"
+	"../../Include/novemberlib/utils/utils.h"
+	<iostream>
+	<time.h>
+
+1469914232 source:/home/anton/projects/FCGI/Lib/Src/utils/md5.cpp
+	"../../Include/novemberlib/utils/md5.h"
+	"../../Include/novemberlib/utils/CLog.h"
+	<cstdio>
+
+1475781191 source:/home/anton/projects/FCGI/Lib/Src/utils/MIMEType.cpp
+	"../../Include/novemberlib/utils/MIMEType.h"
+
+1450104634 source:/home/anton/projects/FCGI/Lib/Src/utils/URI.cpp
+	"../../Include/novemberlib/utils/URI.h"
+
+1471856966 source:/home/anton/projects/FCGI/Lib/Src/utils/utils.cpp
+	"../../Include/novemberlib/utils/utils.h"
+	<fstream>
+	<algorithm>
+	<sys/stat.h>
+

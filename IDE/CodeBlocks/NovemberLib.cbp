@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="NovemberLib" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../Bin/Linux/Debug/NovemberLib" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../../Bin/Linux/Debug/obj/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-pthread -lfcgi -lfcgi++ -lmysqlclient -lepeg" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="../../Bin/Linux/Release/NovemberLib" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../../Bin/Linux/Release/obj/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-pedantic" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-std=c++11" />
+				</Compiler>
+				<Linker>
+					<Add option="-pthread -lfcgi -lfcgi++ -lmysqlclient -lepeg" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../../Include/novemberlib/CBan.h" />
+		<Unit filename="../../Include/novemberlib/CDefaultUser.h" />
+		<Unit filename="../../Include/novemberlib/CHTMLTemplate.h" />
+		<Unit filename="../../Include/novemberlib/FCGI/CFCGIApp.h" />
+		<Unit filename="../../Include/novemberlib/FCGI/CFCGIRequest.h" />
+		<Unit filename="../../Include/novemberlib/FCGI/CFCGIRequestHandler.h" />
+		<Unit filename="../../Include/novemberlib/HTTPClient/CHTTPClient.h" />
+		<Unit filename="../../Include/novemberlib/HTTPClient/CProxy.h" />
+		<Unit filename="../../Include/novemberlib/HTTPClient/CTasksManager.h" />
+		<Unit filename="../../Include/novemberlib/HTTPClient/IResultsStore.h" />
+		<Unit filename="../../Include/novemberlib/helpers/CConfigHelper.h" />
+		<Unit filename="../../Include/novemberlib/helpers/CMessageParser.h" />
+		<Unit filename="../../Include/novemberlib/helpers/CPathsHelper.h" />
+		<Unit filename="../../Include/novemberlib/helpers/CSyncHelper.h" />
+		<Unit filename="../../Include/novemberlib/helpers/CTemplateHelper.h" />
+		<Unit filename="../../Include/novemberlib/interfaces/IErrorMessage.h" />
+		<Unit filename="../../Include/novemberlib/interfaces/IJSONSerializer.h" />
+		<Unit filename="../../Include/novemberlib/interfaces/IStringSerializer.h" />
+		<Unit filename="../../Include/novemberlib/interfaces/ITemplateSingleton.h" />
+		<Unit filename="../../Include/novemberlib/interfaces/IUncopyable.h" />
+		<Unit filename="../../Include/novemberlib/interfaces/IValidTester.h" />
+		<Unit filename="../../Include/novemberlib/managers/CCommandsManager.h" />
+		<Unit filename="../../Include/novemberlib/managers/CDBManager.h" />
+		<Unit filename="../../Include/novemberlib/managers/CDefaultCommandManager.h" />
+		<Unit filename="../../Include/novemberlib/managers/CManagers.h" />
+		<Unit filename="../../Include/novemberlib/managers/CMySQLDBManager.h" />
+		<Unit filename="../../Include/novemberlib/managers/CPageManager.h" />
+		<Unit filename="../../Include/novemberlib/managers/CResourceManager.h" />
+		<Unit filename="../../Include/novemberlib/managers/CSessionManager.h" />
+		<Unit filename="../../Include/novemberlib/pages/CErrorPage.h" />
+		<Unit filename="../../Include/novemberlib/pages/CIndexPage.h" />
+		<Unit filename="../../Include/novemberlib/pages/CPage.h" />
+		<Unit filename="../../Include/novemberlib/utils/CCodeTimer.h" />
+		<Unit filename="../../Include/novemberlib/utils/CLog.h" />
+		<Unit filename="../../Include/novemberlib/utils/MIMEType.h" />
+		<Unit filename="../../Include/novemberlib/utils/URI.h" />
+		<Unit filename="../../Include/novemberlib/utils/config.h" />
+		<Unit filename="../../Include/novemberlib/utils/md5.h" />
+		<Unit filename="../../Include/novemberlib/utils/utils.h" />
+		<Unit filename="../../Src/CBan.cpp" />
+		<Unit filename="../../Src/CDefaultUser.cpp" />
+		<Unit filename="../../Src/CHTMLTemplate.cpp" />
+		<Unit filename="../../Src/FCGI/CFCGIApp.cpp" />
+		<Unit filename="../../Src/FCGI/CFCGIRequest.cpp" />
+		<Unit filename="../../Src/FCGI/CFCGIRequestHandler.cpp" />
+		<Unit filename="../../Src/HTTPClient/CHTTPClient.cpp" />
+		<Unit filename="../../Src/HTTPClient/CProxy.cpp" />
+		<Unit filename="../../Src/helpers/CConfigHelper.cpp" />
+		<Unit filename="../../Src/helpers/CMessageParser.cpp" />
+		<Unit filename="../../Src/helpers/CPathsHelper.cpp" />
+		<Unit filename="../../Src/helpers/CSyncHelper.cpp" />
+		<Unit filename="../../Src/helpers/CTemplateHelper.cpp" />
+		<Unit filename="../../Src/interfaces/IErrorMessage.cpp" />
+		<Unit filename="../../Src/interfaces/IValidTester.cpp" />
+		<Unit filename="../../Src/managers/CCommandsManager.cpp" />
+		<Unit filename="../../Src/managers/CDBManager.cpp" />
+		<Unit filename="../../Src/managers/CDefaultCommandManager.cpp" />
+		<Unit filename="../../Src/managers/CManagers.cpp" />
+		<Unit filename="../../Src/managers/CMySQLDBManager.cpp" />
+		<Unit filename="../../Src/managers/CPageManager.cpp" />
+		<Unit filename="../../Src/managers/CResourceManager.cpp" />
+		<Unit filename="../../Src/managers/CSessionManager.cpp" />
+		<Unit filename="../../Src/pages/CErrorPage.cpp" />
+		<Unit filename="../../Src/pages/CIndexPage.cpp" />
+		<Unit filename="../../Src/pages/CPage.cpp" />
+		<Unit filename="../../Src/utils/CCodeTimer.cpp" />
+		<Unit filename="../../Src/utils/CLog.cpp" />
+		<Unit filename="../../Src/utils/MIMEType.cpp" />
+		<Unit filename="../../Src/utils/URI.cpp" />
+		<Unit filename="../../Src/utils/md5.cpp" />
+		<Unit filename="../../Src/utils/utils.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
