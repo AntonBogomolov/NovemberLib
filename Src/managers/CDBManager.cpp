@@ -1,14 +1,23 @@
 #include "../../Include/novemberlib/managers/CDBManager.h"
 
+<<<<<<< HEAD
 #include "../../Include/novemberlib/helpers/CSyncHelper.h"
+=======
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 #include "../../Include/novemberlib/managers/CManagers.h"
 #include "../../Include/novemberlib/utils/utils.h"
 #include "../../Include/novemberlib/utils/CLog.h"
 
+<<<<<<< HEAD
 CDBManager::CDBManager() :
     dbConnection(NULL), isConnInit(false)
 {
 
+=======
+CDBManager::CDBManager()
+{
+	dbConnection = NULL;
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 }
 
 CDBManager::~CDBManager()
@@ -18,6 +27,7 @@ CDBManager::~CDBManager()
 
 void CDBManager::reconnect()
 {
+<<<<<<< HEAD
 	//if(!getIsConnInit())
 	//{
 	CSyncHelper::getInstance()->getDBMutex()->lock();
@@ -25,6 +35,13 @@ void CDBManager::reconnect()
     initDB(dbName, userName, pass, host);
     CSyncHelper::getInstance()->getDBMutex()->unlock();
 	//}
+=======
+	if(!getIsConnInit())
+	{
+		closeDBConnection();
+		initDB(dbName, userName, pass, host);
+	}
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 }
 
 bool CDBManager::getIsConnInit() const
@@ -74,10 +91,18 @@ void CDBRequest::freeLastResult()
 
 /////////////////////////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
 CDBValue::CDBValue() :
     fieldName("*"), value(""), isTextValue(true)
 {
 
+=======
+CDBValue::CDBValue()
+{
+	fieldName = "*";
+	value="";
+	isTextValue=true;
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 }
 
 CDBValue::CDBValue(const std::string& fieldName, const std::string& value, bool isTextValue)

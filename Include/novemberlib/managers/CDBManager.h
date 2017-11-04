@@ -59,8 +59,11 @@ class CDBRequestResult
 		virtual const std::string getStringValue(const int rowIndex, const int fieldIndex, const std::string& defValue = "") const = 0;
 		virtual int  getIntValue(const int rowIndex, const int fieldIndex,  const int defValue = 0) const = 0;
 		virtual long getLongValue(const int rowIndex, const int fieldIndex, const long defValue = 0) const = 0;
+<<<<<<< HEAD
 		virtual float  getFloatValue(const int rowIndex, const int fieldIndex, const float defValue = 0.0f)  const = 0;
 		virtual double getDoubleValue(const int rowIndex, const int fieldIndex, const double defValue = 0.0) const = 0;
+=======
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 		virtual bool getBoolValue(const int rowIndex, const int fieldIndex, const bool defValue = false) const = 0;
 
 		CDBRequestResult(){rowsCnt=0;fieldsCnt=0;};

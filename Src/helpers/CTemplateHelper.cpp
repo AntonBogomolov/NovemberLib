@@ -21,7 +21,11 @@ CTemplateHelper::CTemplateHelper()
 
 const CHTMLTemplate* CTemplateHelper::loadTemplate(const CPath* templateDir, const std::string& templateFileName, const std::string& templateName)
 {
+<<<<<<< HEAD
     std::string templateContent;
+=======
+    std::string templateContent = "";
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
     std::string contentType = templateDir->getIsOnlyForSiteContent() ? CPathsHelper::getInstance()->getSiteContentDir() : CPathsHelper::getInstance()->getUserContentDir();
     std::string templatePath = contentType + templateDir->getRelativeDir() + templateFileName;
 

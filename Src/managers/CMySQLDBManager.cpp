@@ -58,6 +58,10 @@ CDBRequest* CMySQLDBManager::createDBRequest(const std::string& requestString) c
 	if(getIsConnInit())
 	{
 		CMySQLDBConnection* mySQLConn = dynamic_cast<CMySQLDBConnection*>(dbConnection);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 		CDBRequest* request = new CMySQLDBRequest(mySQLConn);
 		request->createRequest(requestString);
 		return request;
@@ -78,7 +82,11 @@ CDBRequest* CMySQLDBManager::createDBRequest() const
 
 const std::string CMySQLDBManager::getEscapeString(const std::string& str)
 {
+<<<<<<< HEAD
 	std::string retStr;
+=======
+	std::string retStr = "";
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 	//if(str.length() > 100000) return retStr;
 
 	char* tmpStr = new char[str.length() * 2];
@@ -179,6 +187,7 @@ long CMySQLDBRequestResult::getLongValue(const int rowIndex, const int fieldInde
 	return value;
 }
 
+<<<<<<< HEAD
 float CMySQLDBRequestResult::getFloatValue(const int rowIndex, const int fieldIndex, const float defValue) const
 {
 	if (rowIndex >= getRowsCnt()) 	 return defValue;
@@ -215,6 +224,8 @@ double CMySQLDBRequestResult::getDoubleValue(const int rowIndex, const int field
 	return value;
 }
 
+=======
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 bool CMySQLDBRequestResult::getBoolValue(const int rowIndex, const int fieldIndex, const bool defValue) const
 {
 	if(rowIndex   >= getRowsCnt()) 	 return defValue;
@@ -268,8 +279,12 @@ const CDBRequestResult* CMySQLDBRequest::createRequest(const std::string& reques
 	res = new CMySQLDBRequestResult(mysql_store_result(conn->getMySQLConnection()));
 	CSyncHelper::getInstance()->getDBMutex()->unlock();
 
+<<<<<<< HEAD
 	if(requestString.size() < 4096) log->addInfo("SQL-QUERY: " + requestString);
 	else log->addInfo("BIG SQL-QUERY");
+=======
+	log->addInfo("SQL-QUERY: " + requestString);
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 	isLastQuerySuccess = true;
 
 	return res;

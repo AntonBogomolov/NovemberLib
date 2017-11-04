@@ -13,7 +13,11 @@ CLog::CLog()
 	std::string logFileName = "log.txt";
 	int logPrintLevel = CLog::LOG_PRINT_ALL;
 	logBufferLen = 10240;
+<<<<<<< HEAD
 	if(gs != NULL)
+=======
+	if(gs != NULL)	
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 	{
 		logPrintLevel = gs->getIntParamValue("logLevel", 2);
 		logBufferLen  = gs->getLongParamValue("logBufferLen", 10240);
@@ -54,7 +58,11 @@ std::string CLog::getLogData() const
 
 const std::string CLog::getDataAndTime() const
 {
+<<<<<<< HEAD
 	std::string resultString;
+=======
+	std::string resultString = "";
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 
 	time_t currUnixTime;
 	time(&currUnixTime);

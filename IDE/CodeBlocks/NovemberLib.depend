@@ -366,6 +366,7 @@
 	<algorithm>
 	<sys/stat.h>
 
+<<<<<<< HEAD
 1450104641 source:/home/anton/projects/FCGI/Lib/Src/CBan.cpp
 	"../Include/novemberlib/CBan.h"
 	"../Include/novemberlib/managers/CManagers.h"
@@ -738,3 +739,5 @@
 	<algorithm>
 	<sys/stat.h>
 
+=======
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311

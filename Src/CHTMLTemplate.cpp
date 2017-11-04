@@ -3,10 +3,17 @@
 #include "../Include/novemberlib/utils/utils.h"
 #include "../Include/novemberlib/utils/CLog.h"
 
+<<<<<<< HEAD
 CHTMLTemplate::CHTMLTemplate(const std::string& templateName,const std::string& templateData) :
     templateName(templateName), templateData(templateData)
 {
 
+=======
+CHTMLTemplate::CHTMLTemplate(const std::string& templateName,const std::string& templateData)
+{
+	this->templateName = templateName;
+	this->templateData = templateData;
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 }
 
 CHTMLTemplate::~CHTMLTemplate()

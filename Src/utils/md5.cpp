@@ -32,7 +32,10 @@ documentation and/or software.
 
 /* interface header */
 #include "../../Include/novemberlib/utils/md5.h"
+<<<<<<< HEAD
 #include "../../Include/novemberlib/utils/CLog.h"
+=======
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 
 /* system implementation headers */
 #include <cstdio>
@@ -119,7 +122,11 @@ MD5::MD5(const std::string &text)
 MD5::MD5(const char* data, const long dataLen)
 {
   init();
+<<<<<<< HEAD
   update(data, dataLen);
+=======
+  update(data,dataLen);
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
   finalize();
 }
 

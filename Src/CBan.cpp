@@ -4,7 +4,10 @@
 #include "../Include/novemberlib/managers/CDBManager.h"
 #include "../Include/novemberlib/utils/utils.h"
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 CBan::CBan(const int id)
 {
 	this->id = id;

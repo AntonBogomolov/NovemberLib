@@ -11,7 +11,11 @@ CConfigHelper::~CConfigHelper()
 	//dtor
 }
 
+<<<<<<< HEAD
 void CConfigHelper::parseParamString(const std::string& paramString)
+=======
+void CConfigHelper::parsePamarString(const std::string& paramString)
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 {
 	std::string buff = "";
 	std::string varName  = "";
@@ -31,6 +35,7 @@ void CConfigHelper::parseParamString(const std::string& paramString)
 	for(size_t pos = 0; pos < lineEnd; ++pos )
 	{
 		char currChar = paramString[pos];
+<<<<<<< HEAD
 
 		if(currChar < '#') continue;
         if(currChar >  'z') continue;
@@ -43,6 +48,13 @@ void CConfigHelper::parseParamString(const std::string& paramString)
             if(currChar > '_' && currChar < 'a') continue;
             //if(currChar > 'z') continue;
 		}
+=======
+		if(currChar < '.') continue;
+		if(currChar > '9' && currChar < '=') continue;
+		if(currChar > '=' && currChar < 'A') continue;
+		if(currChar > '_' && currChar < 'a') continue;
+		if(currChar > 'z') continue;
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 
 		if(currChar == '=')
 		{
@@ -55,9 +67,13 @@ void CConfigHelper::parseParamString(const std::string& paramString)
 			else
 			{
 				//CLog::getInstance()->addError("Cant parse this line: " + paramString + " in config.conf");
+<<<<<<< HEAD
 				//return;
 				buff += currChar;
 				continue;
+=======
+				return;
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 			}
 		}
 		else
@@ -94,7 +110,11 @@ void CConfigHelper::readConfigFromFile()
 		while(!file.eof())
 		{
 			std::getline(file, tmpStr);
+<<<<<<< HEAD
 			parseParamString(tmpStr);
+=======
+			parsePamarString(tmpStr);
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 		}
 	}
 	catch(...)
@@ -111,6 +131,7 @@ bool CConfigHelper::getIsInit() const
 	return isInit;
 }
 
+<<<<<<< HEAD
 void CConfigHelper::addParamToUpdateQuery(const std::string& paramName, const std::string& newValue)
 {
     paramsToUpdate[paramName] = newValue;
@@ -187,6 +208,9 @@ void CConfigHelper::updateParams()
 }
 
 int CConfigHelper::getIntParamValue(const std::string& paramName, const int defValue)
+=======
+int  CConfigHelper::getIntParamValue(const std::string& paramName, const int defValue)
+>>>>>>> 687e9bc0110018ae2de42439f759cb7ad70af311
 {
 	if(!getIsInit())readConfigFromFile();
 
