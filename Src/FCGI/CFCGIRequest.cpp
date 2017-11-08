@@ -112,8 +112,10 @@ bool CFCGIRequest::response()
 				currRequest->header.set("Content-Type", commandResult.getHeader());
 				currRequest->response.write(commandResult.getData(), commandResult.getDataSize());
 			}
+			commandResult.destroyData();
 			return true;
 		}
+		commandResult.destroyData();
 	}
 	// pages /////////////////////////////////////
 	if(pageManager->getIsNeedProcessPages())

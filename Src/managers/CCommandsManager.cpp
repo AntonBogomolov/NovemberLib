@@ -108,6 +108,7 @@ CCommandResult::CCommandResult(const CCommandResult& result)
     setIsSuccess(result.getIsSuccess());
     setType(result.getType());
     if(result.getType() == CR_BIN) setBinData(result.getBinData());
+    else binData = nullptr;
 }
 
 CCommandResult::CCommandResult(const std::string& data, const bool isValid, const int type)
@@ -134,6 +135,11 @@ CCommandResult::CCommandResult(std::vector<uint8_t>* binData, const bool isValid
 CCommandResult::~CCommandResult()
 {
 
+}
+
+void CCommandResult::destroyData()
+{
+    if(binData) delete binData;
 }
 
 const std::string CCommandResult::getTextData() const

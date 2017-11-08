@@ -33,6 +33,8 @@ class CCommandResult
 		void setIsValid(const bool isValid);
 		void setIsSuccess(const bool isSuccess);
 
+		void destroyData();
+
 		CCommandResult();
 		CCommandResult(const CCommandResult& result);
 		CCommandResult(const std::string& data, const bool isValid, const int type = CR_TEXT);
