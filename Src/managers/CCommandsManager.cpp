@@ -139,7 +139,7 @@ CCommandResult::~CCommandResult()
 
 void CCommandResult::destroyData()
 {
-    if(binData) delete binData;
+    delete binData;
 }
 
 const std::string CCommandResult::getTextData() const
