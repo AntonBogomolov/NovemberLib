@@ -86,16 +86,15 @@ bool CFCGIRequest::response()
 			return true;
 		}
 	}
+
 	// sessions ///////////////////////////////////
-	if(sessionManager->getIsNeedSessionCheck())
-	{
-		if(!sessionManager->checkSession(this))
-		{
-			currRequest->header.set("Content-Type", "text/html; charset=utf-8");
-			currRequest->response << pageManager->getErrorPageContent("403", "User session error");
-			return true;
-		}
-	}
+    if(!sessionManager->checkSession(this))
+    {
+        currRequest->header.set("Content-Type", "text/html; charset=utf-8");
+        currRequest->response << pageManager->getErrorPageContent("403", "User session error");
+        return true;
+    }
+
 	// commands ///////////////////////////////////
 	if(commandManager->getIsNeedProcessCommands())
 	{

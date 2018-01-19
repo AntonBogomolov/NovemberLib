@@ -217,17 +217,28 @@ bool CDefaultUser::isUserExist(const std::string& userKey)
 	std::shared_ptr<CDBRequest> dbRequest(dbManager->createDBRequest());
 
 	const CDBRequestResult* result = dbRequest->selectRequest(CDBValues("id"), "Users", "`key` = '" + dbManager->getEscapeString(userKey) + "'", "LIMIT 1");
-	if (dbRequest->getIsLastQuerySuccess() && result != NULL  && result->getRowsCnt() > 0) return true;
+	if (result != NULL  && result->getRowsCnt() > 0) return true;
 
 	return false;
 }
 
 void CDefaultUser::fillUserData(const std::string& cookieData)
 {
+	CConfigHelper* gs = CConfigHelper::getInstance();
 	int userId = 0;
 	int userType = 0;
 
-	CConfigHelper* gs = CConfigHelper::getInstance();
+	this->userId = 1;
+    this->userType = UT_USER;
+    this->key = cookieData;
+    this->lastChange = 0;
+    this->lastAction = 0;
+    this->userAgent = "";
+    this->pass = "";
+    this->salt = "";
+    this->login = "";
+    this->cookie = gs->getStringParamValue("guestCookieValue", "GUEST");
+
 	bool isHasDB = gs->getStringParamValue("isHasDB", "false") == "true";
 	if(!isHasDB || cookieData == gs->getStringParamValue("guestCookieValue", "GUEST"))
 	{
@@ -262,6 +273,7 @@ void CDefaultUser::fillUserData(const std::string& cookieData)
 			userId   = 0;
 			userType = 0;
 		}
+
 		key = cookieData;
 		remouteAddress = result->getStringValue(0,2);
 		lastChange = result->getLongValue(0,3);

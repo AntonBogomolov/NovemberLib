@@ -56,6 +56,7 @@ bool CSessionManager::checkSession(CFCGIRequest* currRequest)
 	{
 		currRequest->getRequestForModify()->createCookie(cookieName, guestCookieValue, cookieLifeTime);
 		cookieData = guestCookieValue;
+		CLog::getInstance()->addInfo("EMPTY COOKIE");
 	}
 	else													// old user has cookie
 	{
@@ -63,11 +64,14 @@ bool CSessionManager::checkSession(CFCGIRequest* currRequest)
 		{
 			currRequest->getRequestForModify()->createCookie(cookieName, guestCookieValue, cookieLifeTime);
 			cookieData = guestCookieValue;
+
+			CLog::getInstance()->addInfo("GUEST COOKIE");
 		}
 		else
 		if(CDefaultUser::isUserExist(cookieData))
 		{
 			currRequest->getRequestForModify()->createCookie(cookieName, cookieData, cookieLifeTime);
+			CLog::getInstance()->addInfo("USER COOKIE");
 		}
 	}
 
@@ -82,6 +86,11 @@ bool CSessionManager::checkSession(CFCGIRequest* currRequest)
 void CSessionManager::loginUser(CFCGIRequest* currRequest, const std::string& login, const std::string& pass)
 {
 	CConfigHelper* gs = CConfigHelper::getInstance();
+    if(!currRequest->getUser()->getIsUserGuest())
+    {
+        currRequest->getRequestForModify()->createCookie(gs->getStringParamValue("cookieName", "SESSIONID"), gs->getStringParamValue("guestCookieValue", "GUEST"), gs->getLongParamValue("sessionLifeTimeInMs", 5184000l));
+        return;
+    }
 
 	CDefaultUser* currUser = CDefaultUser::loginUser(login, pass);
 	if (currUser && currUser->getIsValid())

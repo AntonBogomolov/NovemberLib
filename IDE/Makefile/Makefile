@@ -163,11 +163,10 @@ clean_release:
 	rm -rf $(OBJDIR_RELEASE)/__/__/Src/HTTPClient
 
 install:
-	#mkdir -p /usr/local/include/novemberlib /usr/include/novemberlib	
 	cp $(TARGET) /usr/local/lib	
-	cp $(TARGET) /usr/lib/i386-linux-gnu
+	cp $(TARGET) /usr/lib/
 	cp -r ../../Include/*/ /usr/local/include/	
-	cp -r ../../Include/*/ /usr/include/	
+	chmod 744 /usr/lib/$(LIBNAME)
 
 .PHONY: before_release after_release clean_release clean install 
 
